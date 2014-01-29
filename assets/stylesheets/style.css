@@ -1528,22 +1528,20 @@ td.visible-print {
   th.hidden-print,
   td.hidden-print {
     display: none !important; } }
-* {
-  background-color: rgba(255, 255, 255, 0.1); }
-
 body {
   background-color: #31313d;
   color: #eeeeee; }
 
 header {
   margin-top: 37.5px;
-  margin-bottom: 50px; }
+  margin-bottom: 62.5px; }
   header h2 {
     font-size: 1.1em;
     font-weight: 200;
     text-transform: uppercase;
-    color: #afafbe;
-    padding-top: 8.33333px; }
+    text-align: right;
+    padding-top: 8.33333px;
+    color: #afafbe; }
     @media (min-width: 1200px) {
       header h2 {
         padding-top: 12.5px;
@@ -1551,36 +1549,54 @@ header {
     @media (max-width: 991px) {
       header h2 {
         padding-top: 2px; } }
+    @media (max-width: 768px) {
+      header h2 {
+        text-align: center;
+        font-size: 1.5em; } }
 
-.blog-logo {
+.sawhorse-logo {
   background: url(/assets/sawhorse-media.jpg);
   background-image: url(/assets/sawhorse-media.svg), none;
   background-repeat: no-repeat;
   background-size: 100%;
   display: block;
-  margin: 0px;
+  margin: 0px auto;
   height: 90px;
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
   border: 0; }
+  @media (max-width: 768px) {
+    .sawhorse-logo {
+      width: 50%; } }
+  @media (max-width: 480px) {
+    .sawhorse-logo {
+      width: 80%; } }
 
-.blog-about {
-  text-align: right; }
-  .blog-about p {
-    padding-top: 12.5px;
-    font-size: 1.15em;
-    color: #31313d; }
-  .blog-about li {
-    list-style-type: none;
-    width: 49%;
-    float: right;
-    text-transform: uppercase; }
-  .blog-about a {
-    color: #999999; }
-    .blog-about a:hover {
-      color: #555555; }
+section {
+  margin-bottom: 25px;
+  padding: 0px 25px; }
+  section h3 {
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 600;
+    margin-top: 0px;
+    font-size: 1.25em; }
+  section a {
+    color: #f48120; }
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 12.5px;
+  color: #767691; }
+  footer a {
+    font-weight: 600; }
+    footer a:hover {
+      color: #31313d; }
+  footer small a {
+    text-transform: uppercase;
+    font-weight: 300; }
 
 .blog-post {
   margin-bottom: 37.5px; }
@@ -1672,19 +1688,6 @@ header {
 .sidebar-contact span {
   text-transform: uppercase;
   font-size: 0.8em; }
-
-footer {
-  margin-top: 50px;
-  margin-bottom: 12.5px;
-  color: #555555; }
-  footer a {
-    color: #535367;
-    font-weight: 600; }
-    footer a:hover {
-      color: #31313d; }
-  footer small a {
-    text-transform: uppercase;
-    font-weight: 300; }
 
 @media (max-width: 400px) {
   .blog-header .col-xs-6 {
