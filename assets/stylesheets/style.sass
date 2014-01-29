@@ -1,0 +1,188 @@
+
+// Sawhorse Variables
+// -----------------------
+
+$sm-gutter: 25px
+$sm-violet: #31313D
+$sm-orange: #F48120
+
+
+// Bootstrap Overrides
+// -----------------------
+$font-family-sans-serif:  "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !default
+$font-family-serif:       "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif !default
+
+$container-tablet:             620px
+$container-desktop:            800px
+$container-large-desktop:      900px
+
+@import "bootstrap/bootstrap"
+
+
+* 	
+	background-color: rgba(255,255,255,0.1)
+
+
+// Styles
+// -----------------------
+
+body
+	background-color: $sm-violet
+	color: $gray-lighter
+
+header
+	margin-top: $sm-gutter * 1.5
+	margin-bottom: $sm-gutter * 2
+	h2
+		font-size: 1.1em
+		font-weight: 200
+		text-transform: uppercase
+		color: lighten($sm-violet, 50%)
+		padding-top: $sm-gutter/3
+		@media (min-width: $screen-lg-min)
+			padding-top: $sm-gutter/2
+			font-size: 1.25em
+		@media (max-width: $screen-sm-max)
+			padding-top: 2px
+
+
+
+
+
+.blog-logo
+	background: url(/assets/sawhorse-media.jpg)
+	background-image: url(/assets/sawhorse-media.svg), none
+	background-repeat: no-repeat
+	background-size: 100%
+	display: block
+	margin: 0px
+	height: 90px
+	+text-hide
+.blog-about
+	text-align: right
+	p 
+		padding-top: $sm-gutter/2
+		font-size: 1.15em
+		color: $sm-violet
+	li
+		list-style-type: none
+		width: 49%
+		float: right
+		text-transform: uppercase
+	a
+		color: $gray-light
+		&:hover
+			color: $gray
+
+.blog-post
+	margin-bottom: $sm-gutter * 1.5
+	.post-title 
+		line-height: 0.9em
+		a
+			font-weight: 700
+			color: lighten($sm-violet, 10%)
+		a:hover
+			text-decoration: none
+			color: lighten($sm-violet, 25%)
+	p, li
+		font-size: 1.15em
+		line-height: 1.25em
+		margin-bottom: 15px
+		a 
+			font-weight: 600
+			color: $sm-orange
+		a:hover
+			color: darken($sm-orange, 10%)
+	img 
+		width: 100%
+		margin-top: $sm-gutter/4
+		margin-bottom: $sm-gutter/2
+		border-radius: 4px
+		+box-shadow(0px 1px 5px rgba(0,0,0,0.1))
+	.metadata
+		margin-bottom: 5px
+		font-family: $font-family-serif
+		font-size: 0.7em
+		text-transform: uppercase
+		word-spacing: 2px
+	.metadata a
+		color: $gray-light
+	.photo
+		margin-top: $sm-gutter
+		
+
+.blog-sidebar
+	padding-left: $sm-gutter*1.25
+
+	h2
+		text-transform: uppercase
+		font-size: 1.25em
+		color: $sm-violet
+	img
+		width: 100%
+	ul 
+		padding-left: 0px
+
+	li 
+		list-style-type: none
+		float: left
+		width: 49%
+		a 
+			color: $sm-orange
+			font-weight: 600
+
+.sidebar-site
+	color: mix($gray, $gray-light, 70%)
+	a
+		display: block
+		margin-bottom: 6px
+		clear: both
+		color: $sm-orange
+		line-height: 1em
+		&:hover
+			text-decoration: none
+			color: darken($sm-orange, 10%)
+	h4
+		display: inline-block
+		margin: 0px 5px 0px 0px
+		font-weight: 600
+		font-size: 1.5em
+	a h4 
+		color: lighten($sm-violet, 30%)
+		&:hover
+			color: $sm-violet
+	span
+		display: inline-block
+		font-family: $font-family-serif
+		color: $gray-light
+		font-size: 1.15em
+	img 
+		width: 42px
+		margin-right: $sm-gutter/2
+		float: left
+
+.sidebar-contact
+	@extend .sidebar-site
+	h4 
+		font-size: 1.25em
+	span 
+		text-transform: uppercase
+		font-size: 0.8em
+
+footer 
+	margin-top: $sm-gutter * 2
+	margin-bottom: $sm-gutter / 2
+	color: $gray
+	a
+		color: lighten($sm-violet, 15%)
+		font-weight: 600
+		&:hover 
+			color: $sm-violet
+	small a
+		text-transform: uppercase
+		font-weight: 300
+
+@media (max-width: 400px)
+	.blog-header .col-xs-6
+		width: 100%
+
