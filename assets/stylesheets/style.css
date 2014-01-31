@@ -2342,7 +2342,7 @@ body {
 header {
   height: 480px;
   text-align: center;
-  padding-top: 50px; }
+  padding-top: 150px; }
   header h1 {
     background: url(/assets/we-are-sawhorse.jpg);
     background-image: url(/assets/we-are-sawhorse.svg), none;
@@ -2352,7 +2352,7 @@ header {
     display: block;
     width: 60%;
     margin: 0px auto;
-    min-height: 260px;
+    min-height: 160px;
     font: 0/0 a;
     color: transparent;
     text-shadow: none;
@@ -2376,36 +2376,33 @@ section h2 {
     margin-top: 20px; }
 section h3 {
   font-weight: 300;
-  margin-top: 20px;
+  margin-top: 0px;
   font-style: italic;
-  margin-bottom: 15px;
+  text-align: center;
+  margin-bottom: 10px;
   color: #eeeeee;
   font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
   font-size: 1.25em; }
 section a {
-  color: #f48120; }
+  color: #f48120;
+  text-align: center;
+  font-size: 0.9em; }
 section .content {
-  background: rgba(0, 0, 0, 0.6);
   width: 600px;
   padding: 30px;
   height: 400px; }
 
 section.muckrack, section.shortyawards {
-  background-image: url(/assets/muckedup.jpg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 400px; }
+  padding-top: 90px;
+  height: 320px; }
   section.muckrack h2, section.shortyawards h2 {
     background: url(/assets/we-are-sawhorse.jpg);
     background-image: url(/assets/muckrack-dark.svg), none;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    height: 120px;
+    text-align: center;
+    height: 90px;
     font: 0/0 a;
     color: transparent;
     text-shadow: none;
@@ -2413,19 +2410,28 @@ section.muckrack, section.shortyawards {
     border: 0;
     margin-top: 0px; }
   section.muckrack p, section.shortyawards p {
-    line-height: 1.15em;
-    color: white;
+    line-height: 1.2em;
+    margin-top: 15px;
+    color: #afafbe;
     font-size: 1.25em; }
   section.muckrack a, section.shortyawards a {
     text-transform: uppercase;
     font-weight: 600;
     margin-top: 10px;
-    display: inline-block; }
+    color: #f48120;
+    text-align: center;
+    font-size: 1em;
+    display: block; }
 
-section.shortyawards {
-  background-image: url(/assets/shorties.jpg); }
-  section.shortyawards .content {
-    float: right; }
+section.shortyawards h2 {
+  background: url(/assets/we-are-sawhorse.jpg);
+  background-image: url(/assets/shorty-dark.svg), none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  height: 130px; }
+section.shortyawards p {
+  text-align: right; }
 
 footer {
   margin-top: 50px;
