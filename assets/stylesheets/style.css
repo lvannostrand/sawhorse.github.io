@@ -2545,7 +2545,7 @@ header {
     font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
     font-weight: 300;
     font-style: italic;
-    color: #83838a; }
+    color: #8d8d94; }
 
 .header-bg {
   height: 540px;
@@ -2575,8 +2575,8 @@ header {
   z-index: 1; }
 
 section.muckrack, section.shortyawards {
-  padding-top: 80px;
-  height: 320px; }
+  padding-top: 100px;
+  height: 340px; }
   section.muckrack h2, section.shortyawards h2 {
     background: url(/assets/we-are-sawhorse.jpg);
     background-image: url(/assets/muckrack-dark.svg), none;
@@ -2597,25 +2597,29 @@ section.muckrack, section.shortyawards {
     font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
     font-size: 1.25em;
     text-align: center;
+    color: #eeeeee;
     margin-top: 0px;
-    margin-bottom: 10px;
-    color: #eeeeee; }
+    margin-bottom: 10px; }
   section.muckrack p, section.shortyawards p {
-    line-height: 1.2em;
-    margin-top: 15px;
+    margin-top: 20px;
     color: #afafbe;
-    font-size: 1.25em; }
+    font-size: 1.4em;
+    line-height: 1.3em;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center; }
   section.muckrack a, section.shortyawards a {
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
     font-size: 1em;
     margin-top: 10px;
-    color: #f48120;
+    color: #059cdb;
     display: block; }
 
 section.shortyawards {
-  height: 350px; }
+  height: 350px;
+  padding-top: 90px; }
   section.shortyawards h2 {
     background: url(/assets/we-are-sawhorse.jpg);
     background-image: url(/assets/shorty-dark.svg), none;
@@ -2623,8 +2627,28 @@ section.shortyawards {
     background-position: center center;
     background-size: 100%;
     height: 130px; }
-  section.shortyawards p {
+  section.shortyawards a {
+    color: #2bafa5; }
+
+section.wearefor {
+  padding: 80px 0px 100px; }
+  section.wearefor h2 {
+    color: white;
+    font-size: 1.9em;
     text-align: right; }
+  section.wearefor h3 {
+    font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    font-size: 1.15em;
+    letter-spacing: 1px;
+    color: #a0a0b3; }
+  section.wearefor a {
+    color: #f48120;
+    font-weight: 600; }
+
+.col-offset {
+  padding-left: 0px;
+  padding-right: 2.25em; }
 
 footer {
   margin-top: 50px;
