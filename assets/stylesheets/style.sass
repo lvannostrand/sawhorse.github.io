@@ -26,10 +26,20 @@ body
 	color: $gray-lighter
 
 
+nav
+	a
+		color: rgba(255,255,255,0.4)
+		text-transform: uppercase
+		font-size: 0.9em
+
+
 header
-	height: 480px
+	height: 540px
 	text-align: center
 	padding-top: 150px
+	position: relative
+	background-color: rgba(49, 49, 61,0.8)
+	z-index: 1000
 	h1
 		background: url(/assets/we-are-sawhorse.jpg)
 		background-image: url(/assets/we-are-sawhorse.svg), none
@@ -45,45 +55,48 @@ header
 		font-family: $font-family-serif
 		font-weight: 300
 		font-style: italic
-		color: lighten($sm-violet, 30%)
+		color: mix($sm-violet, white, 60%)
 
-section
-	h2
-		font-size: 3.5em
-		font-weight: 700
-		margin: 0px
-		letter-spacing: -1px
-		a 
-			float: right
-			font-size: 0.5em
-			font-weight: 500
-			margin-top: 20px
-	h3
 
-		font-weight: 300
-		margin-top: 0px
-		font-style: italic
-		text-align: center
-		margin-bottom: 10px
-		color: $gray-lighter
+.header-bg
+	height: 540px
+	overflow: hidden
+	position: absolute
+	width: 100%
+	top: 0px
+	z-index: 700
+	.carousel-inner
+		height: 540px
+	img
+		min-height: 540px
+		min-width: 100%
 
-		font-family: $font-family-serif
-		font-size: 1.25em
-	a
-		color: $sm-orange
-		text-align: center
-		font-size: 0.9em
 
-	.content
 
-		width: 600px
-		padding: 30px
-		height: 400px
+
+.carousel
+
+
+	.item 
+		+transition(opacity 0.6s)
+
+	.active.left, 
+	.active.right
+		left: 0
+		opacity: 0
+		z-index: 2
+
+	.next, 
+	.prev
+		left: 0
+		opacity: 1
+		z-index: 1
+
 
 
 
 section.muckrack
-	padding-top: 90px
+	padding-top: 80px
 	height: 320px
 	h2
 		background: url(/assets/we-are-sawhorse.jpg)
@@ -92,27 +105,37 @@ section.muckrack
 		background-position: center center
 		background-size: 100%
 		text-align: center
-
 		height: 90px
-		+text-hide
 		margin-top: 0px
+		+text-hide
+	h3
+		font-weight: 300
+		font-style: italic
+		font-family: $font-family-serif
+		font-size: 1.25em
+		text-align: center
+		margin-top: 0px
+		margin-bottom: 10px
+		color: $gray-lighter
 	p
 		line-height: 1.2em
 		margin-top: 15px
 		color: lighten($sm-violet, 50%)
 		font-size: 1.25em
-
 	a 
 		text-transform: uppercase
+		text-align: center
 		font-weight: 600
+		font-size: 1em
 		margin-top: 10px
 		color: $sm-orange
-		text-align: center
-		font-size: 1em
 		display: block
+
+
 
 section.shortyawards
 	@extend section.muckrack
+	height: 350px
 	h2
 		background: url(/assets/we-are-sawhorse.jpg)
 		background-image: url(/assets/shorty-dark.svg), none
@@ -122,6 +145,13 @@ section.shortyawards
 		height: 130px	
 	p
 		text-align: right
+
+
+
+
+
+
+
 
 
 
@@ -139,109 +169,4 @@ footer
 		font-weight: 300
 
 
-
-
-
-
-.blog-post
-	margin-bottom: $sm-gutter * 1.5
-	.post-title 
-		line-height: 0.9em
-		a
-			font-weight: 700
-			color: lighten($sm-violet, 10%)
-		a:hover
-			text-decoration: none
-			color: lighten($sm-violet, 25%)
-	p, li
-		font-size: 1.15em
-		line-height: 1.25em
-		margin-bottom: 15px
-		a 
-			font-weight: 600
-			color: $sm-orange
-		a:hover
-			color: darken($sm-orange, 10%)
-	img 
-		width: 100%
-		margin-top: $sm-gutter/4
-		margin-bottom: $sm-gutter/2
-		border-radius: 4px
-		+box-shadow(0px 1px 5px rgba(0,0,0,0.1))
-	.metadata
-		margin-bottom: 5px
-		font-family: $font-family-serif
-		font-size: 0.7em
-		text-transform: uppercase
-		word-spacing: 2px
-	.metadata a
-		color: $gray-light
-	.photo
-		margin-top: $sm-gutter
-		
-
-.blog-sidebar
-	padding-left: $sm-gutter*1.25
-
-	h2
-		text-transform: uppercase
-		font-size: 1.25em
-		color: $sm-violet
-	img
-		width: 100%
-	ul 
-		padding-left: 0px
-
-	li 
-		list-style-type: none
-		float: left
-		width: 49%
-		a 
-			color: $sm-orange
-			font-weight: 600
-
-.sidebar-site
-	color: mix($gray, $gray-light, 70%)
-	a
-		display: block
-		margin-bottom: 6px
-		clear: both
-		color: $sm-orange
-		line-height: 1em
-		&:hover
-			text-decoration: none
-			color: darken($sm-orange, 10%)
-	h4
-		display: inline-block
-		margin: 0px 5px 0px 0px
-		font-weight: 600
-		font-size: 1.5em
-	a h4 
-		color: lighten($sm-violet, 30%)
-		&:hover
-			color: $sm-violet
-	span
-		display: inline-block
-		font-family: $font-family-serif
-		color: $gray-light
-		font-size: 1.15em
-	img 
-		width: 42px
-		margin-right: $sm-gutter/2
-		float: left
-
-.sidebar-contact
-	@extend .sidebar-site
-	h4 
-		font-size: 1.25em
-	span 
-		text-transform: uppercase
-		font-size: 0.8em
-
-
-
-
-@media (max-width: 400px)
-	.blog-header .col-xs-6
-		width: 100%
 

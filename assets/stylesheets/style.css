@@ -1473,6 +1473,25 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear; }
+  .fade.in {
+    opacity: 1; }
+
+.collapse {
+  display: none; }
+  .collapse.in {
+    display: block; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease; }
+
 .caret {
   display: inline-block;
   width: 0;
@@ -2167,6 +2186,162 @@ input[type="button"].btn-block {
     background-color: white;
     cursor: not-allowed; }
 
+.carousel {
+  position: relative; }
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%; }
+  .carousel-inner > .item {
+    display: none;
+    position: relative;
+    -webkit-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left; }
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      line-height: 1; }
+  .carousel-inner > .active,
+  .carousel-inner > .next,
+  .carousel-inner > .prev {
+    display: block; }
+  .carousel-inner > .active {
+    left: 0; }
+  .carousel-inner > .next,
+  .carousel-inner > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .carousel-inner > .next {
+    left: 100%; }
+  .carousel-inner > .prev {
+    left: -100%; }
+  .carousel-inner > .next.left,
+  .carousel-inner > .prev.right {
+    left: 0; }
+  .carousel-inner > .active.left {
+    left: -100%; }
+  .carousel-inner > .active.right {
+    left: 100%; }
+
+.carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  .carousel-control.left {
+    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0%), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
+  .carousel-control.right {
+    left: auto;
+    right: 0;
+    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0%), color-stop(rgba(0, 0, 0, 0.5) 100%));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
+  .carousel-control:hover, .carousel-control:focus {
+    outline: none;
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+    filter: alpha(opacity=90); }
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next,
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block; }
+  .carousel-control .icon-prev,
+  .carousel-control .glyphicon-chevron-left {
+    left: 50%; }
+  .carousel-control .icon-next,
+  .carousel-control .glyphicon-chevron-right {
+    right: 50%; }
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    font-family: serif; }
+  .carousel-control .icon-prev:before {
+    content: '\2039'; }
+  .carousel-control .icon-next:before {
+    content: '\203a'; }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center; }
+  .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0); }
+  .carousel-indicators .active {
+    margin: 0;
+    width: 12px;
+    height: 12px;
+    background-color: white; }
+
+.carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  .carousel-caption .btn {
+    text-shadow: none; }
+
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicons-chevron-left,
+  .carousel-control .glyphicons-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    font-size: 30px; }
+
+  .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px; }
+
+  .carousel-indicators {
+    bottom: 20px; } }
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
@@ -2339,10 +2514,18 @@ body {
   background-color: #31313d;
   color: #eeeeee; }
 
+nav a {
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  font-size: 0.9em; }
+
 header {
-  height: 480px;
+  height: 540px;
   text-align: center;
-  padding-top: 150px; }
+  padding-top: 150px;
+  position: relative;
+  background-color: rgba(49, 49, 61, 0.8);
+  z-index: 1000; }
   header h1 {
     background: url(/assets/we-are-sawhorse.jpg);
     background-image: url(/assets/we-are-sawhorse.svg), none;
@@ -2362,38 +2545,37 @@ header {
     font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
     font-weight: 300;
     font-style: italic;
-    color: #767691; }
+    color: #83838a; }
 
-section h2 {
-  font-size: 3.5em;
-  font-weight: 700;
-  margin: 0px;
-  letter-spacing: -1px; }
-  section h2 a {
-    float: right;
-    font-size: 0.5em;
-    font-weight: 500;
-    margin-top: 20px; }
-section h3 {
-  font-weight: 300;
-  margin-top: 0px;
-  font-style: italic;
-  text-align: center;
-  margin-bottom: 10px;
-  color: #eeeeee;
-  font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
-  font-size: 1.25em; }
-section a {
-  color: #f48120;
-  text-align: center;
-  font-size: 0.9em; }
-section .content {
-  width: 600px;
-  padding: 30px;
-  height: 400px; }
+.header-bg {
+  height: 540px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  z-index: 700; }
+  .header-bg .carousel-inner {
+    height: 540px; }
+  .header-bg img {
+    min-height: 540px;
+    min-width: 100%; }
+
+.carousel .item {
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s; }
+.carousel .active.left,
+.carousel .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 2; }
+.carousel .next,
+.carousel .prev {
+  left: 0;
+  opacity: 1;
+  z-index: 1; }
 
 section.muckrack, section.shortyawards {
-  padding-top: 90px;
+  padding-top: 80px;
   height: 320px; }
   section.muckrack h2, section.shortyawards h2 {
     background: url(/assets/we-are-sawhorse.jpg);
@@ -2403,12 +2585,21 @@ section.muckrack, section.shortyawards {
     background-size: 100%;
     text-align: center;
     height: 90px;
+    margin-top: 0px;
     font: 0/0 a;
     color: transparent;
     text-shadow: none;
     background-color: transparent;
-    border: 0;
-    margin-top: 0px; }
+    border: 0; }
+  section.muckrack h3, section.shortyawards h3 {
+    font-weight: 300;
+    font-style: italic;
+    font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #eeeeee; }
   section.muckrack p, section.shortyawards p {
     line-height: 1.2em;
     margin-top: 15px;
@@ -2416,22 +2607,24 @@ section.muckrack, section.shortyawards {
     font-size: 1.25em; }
   section.muckrack a, section.shortyawards a {
     text-transform: uppercase;
+    text-align: center;
     font-weight: 600;
+    font-size: 1em;
     margin-top: 10px;
     color: #f48120;
-    text-align: center;
-    font-size: 1em;
     display: block; }
 
-section.shortyawards h2 {
-  background: url(/assets/we-are-sawhorse.jpg);
-  background-image: url(/assets/shorty-dark.svg), none;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
-  height: 130px; }
-section.shortyawards p {
-  text-align: right; }
+section.shortyawards {
+  height: 350px; }
+  section.shortyawards h2 {
+    background: url(/assets/we-are-sawhorse.jpg);
+    background-image: url(/assets/shorty-dark.svg), none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    height: 130px; }
+  section.shortyawards p {
+    text-align: right; }
 
 footer {
   margin-top: 50px;
@@ -2444,98 +2637,3 @@ footer {
   footer small a {
     text-transform: uppercase;
     font-weight: 300; }
-
-.blog-post {
-  margin-bottom: 37.5px; }
-  .blog-post .post-title {
-    line-height: 0.9em; }
-    .blog-post .post-title a {
-      font-weight: 700;
-      color: #484859; }
-    .blog-post .post-title a:hover {
-      text-decoration: none;
-      color: #6a6a84; }
-  .blog-post p, .blog-post li {
-    font-size: 1.15em;
-    line-height: 1.25em;
-    margin-bottom: 15px; }
-    .blog-post p a, .blog-post li a {
-      font-weight: 600;
-      color: #f48120; }
-    .blog-post p a:hover, .blog-post li a:hover {
-      color: #d6680b; }
-  .blog-post img {
-    width: 100%;
-    margin-top: 6.25px;
-    margin-bottom: 12.5px;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); }
-  .blog-post .metadata {
-    margin-bottom: 5px;
-    font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
-    font-size: 0.7em;
-    text-transform: uppercase;
-    word-spacing: 2px; }
-  .blog-post .metadata a {
-    color: #999999; }
-  .blog-post .photo {
-    margin-top: 25px; }
-
-.blog-sidebar {
-  padding-left: 31.25px; }
-  .blog-sidebar h2 {
-    text-transform: uppercase;
-    font-size: 1.25em;
-    color: #31313d; }
-  .blog-sidebar img {
-    width: 100%; }
-  .blog-sidebar ul {
-    padding-left: 0px; }
-  .blog-sidebar li {
-    list-style-type: none;
-    float: left;
-    width: 49%; }
-    .blog-sidebar li a {
-      color: #f48120;
-      font-weight: 600; }
-
-.sidebar-site, .sidebar-contact {
-  color: dimgrey; }
-  .sidebar-site a, .sidebar-contact a {
-    display: block;
-    margin-bottom: 6px;
-    clear: both;
-    color: #f48120;
-    line-height: 1em; }
-    .sidebar-site a:hover, .sidebar-contact a:hover {
-      text-decoration: none;
-      color: #d6680b; }
-  .sidebar-site h4, .sidebar-contact h4 {
-    display: inline-block;
-    margin: 0px 5px 0px 0px;
-    font-weight: 600;
-    font-size: 1.5em; }
-  .sidebar-site a h4, .sidebar-contact a h4 {
-    color: #767691; }
-    .sidebar-site a h4:hover, .sidebar-contact a h4:hover {
-      color: #31313d; }
-  .sidebar-site span, .sidebar-contact span {
-    display: inline-block;
-    font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
-    color: #999999;
-    font-size: 1.15em; }
-  .sidebar-site img, .sidebar-contact img {
-    width: 42px;
-    margin-right: 12.5px;
-    float: left; }
-
-.sidebar-contact h4 {
-  font-size: 1.25em; }
-.sidebar-contact span {
-  text-transform: uppercase;
-  font-size: 0.8em; }
-
-@media (max-width: 400px) {
-  .blog-header .col-xs-6 {
-    width: 100%; } }
