@@ -2687,15 +2687,44 @@ nav a {
   color: rgba(255, 255, 255, 0.4);
   text-transform: uppercase;
   font-size: 0.9em; }
+nav img {
+  height: 27px; }
+nav .text-hide {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important; }
 
 .on-scroll {
-  background-color: rgba(49, 49, 61, 0.8);
+  background-color: rgba(49, 49, 61, 0.85);
   border-bottom: 1px solid #484859;
   margin-top: 0px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
 .on-scroll a {
   color: white; }
+
+.mr-icon {
+  background: url(/assets/images/we-are-sawhorse.jpg);
+  background-image: url(/assets/images/muckrack-icon.svg), none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: block; }
+
+.shorty-icon {
+  background: url(/assets/images/we-are-sawhorse.jpg);
+  background-image: url(/assets/images/shorty-icon.svg), none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  margin-right: 15px;
+  margin-left: 15px; }
 
 header {
   height: 540px;
