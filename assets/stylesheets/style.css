@@ -2693,15 +2693,6 @@ nav .text-hide {
   padding-top: 12px !important;
   padding-bottom: 12px !important; }
 
-.on-scroll {
-  background-color: rgba(49, 49, 61, 0.85);
-  border-bottom: 1px solid #484859;
-  margin-top: 0px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
-.on-scroll a {
-  color: white; }
-
 .mr-icon {
   background: url(/assets/images/we-are-sawhorse.jpg);
   background-image: url(/assets/images/muckrack-icon.svg), none;
@@ -2770,16 +2761,21 @@ header h2 {
 .carousel .item {
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s; }
+.carousel .active.left, .carousel .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 2; }
+.carousel .next, .carousel .prev {
+  left: 0;
+  opacity: 1;
+  z-index: 1; }
 .carousel .carousel-image {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
-  display: block;
-  min-height: 100%;
-  width: 100%;
-  line-height: 50em; }
+  height: 300px; }
 .carousel .muckedup {
   background-image: url(../carousel/muckedup.jpg); }
 .carousel .adweek {
@@ -2867,6 +2863,8 @@ section.wearefor a {
   color: #f48120;
   font-weight: 600; }
 
+section.contact {
+  padding-top: 60px; }
 section.contact h2 {
   color: white;
   font-size: 1.7em;
@@ -2892,7 +2890,7 @@ section.contact h2 {
   color: #9292a8; }
 
 footer {
-  margin-top: 50px;
+  margin-top: 62.5px;
   margin-bottom: 12.5px;
   color: #767691; }
 footer a {
@@ -2903,16 +2901,23 @@ footer small a {
   text-transform: uppercase;
   font-weight: 300; }
 
+.js-on-scroll {
+  background-color: rgba(49, 49, 61, 0.85);
+  border-bottom: 1px solid #484859;
+  margin-top: 0px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+.js-on-scroll a {
+  color: white; }
+
 .wufoo {
-  margin-top: 20px; }
+  margin-top: 15px; }
 .wufoo input, .wufoo textarea {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  border: 0px;
-  padding: 3px;
   background-color: #3c3c4b;
   border: 1px solid #535367;
   color: white; }
@@ -2924,9 +2929,12 @@ footer small a {
   color: #afafbe;
   font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
   background-color: #31313d; }
+.wufoo input.submit:hover {
+  background-color: #535367; }
 .wufoo span.req {
   color: #f48120;
-  font-family: 1.25em; }
+  margin-left: 4px !important;
+  font-size: 16px; }
 .wufoo textarea.textarea {
   padding: 9px; }
 .wufoo label {
@@ -2946,8 +2954,6 @@ footer small a {
   margin-right: 2%; }
 .wufoo #foli9 input {
   width: 100%; }
-.wufoo #foli8 {
-  padding-bottom: 0px; }
 .wufoo #foli7 input {
   width: 100%; }
 .wufoo .foli5 {
@@ -2956,6 +2962,8 @@ footer small a {
 .wufoo .foli12 {
   width: 25.5%;
   padding-right: 5px; }
+.wufoo #foli8 {
+  padding-bottom: 0px; }
 .wufoo #foli8 span {
   width: 15%;
   margin: 0px; }
