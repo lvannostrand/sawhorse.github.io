@@ -2943,10 +2943,11 @@ footer small a {
   font-weight: 300;
   font-size: 0.85em;
   text-transform: uppercase; }
+@media (max-width: 1199px) {
+  .wufoo label {
+    font-size: 0.74em; } }
 .wufoo li {
   padding: 0px 0px 20px 0px; }
-.wufoo input#Field12 {
-  width: 99%; }
 .wufoo #foli9 span {
   width: 49%;
   margin: 0; }
@@ -2956,12 +2957,8 @@ footer small a {
   width: 100%; }
 .wufoo #foli7 input {
   width: 100%; }
-.wufoo .foli5 {
-  padding-left: 0px;
-  width: 24.5%; }
-.wufoo .foli12 {
-  width: 25.5%;
-  padding-right: 5px; }
+.wufoo #Field5 {
+  width: 100%; }
 .wufoo #foli8 {
   padding-bottom: 0px; }
 .wufoo #foli8 span {
@@ -2972,3 +2969,15 @@ footer small a {
 .wufoo #foli8 span.symbol {
   width: 5%;
   text-align: center; }
+@media (min-width: 992px) {
+  .wufoo .no-rp {
+    padding-right: 0px; }
+  .wufoo .foli12 {
+    width: 26.5%;
+    padding-right: 5px; }
+  .wufoo .foli5 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 23.5%; }
+  .wufoo input#Field12 {
+    width: 99%; } }
