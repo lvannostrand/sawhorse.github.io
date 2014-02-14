@@ -8,6 +8,8 @@ $shorty-teal: #2BAFA5
 $mr-blue: #048AC2
 
 
+
+
 // Bootstrap Overrides
 // -----------------------
 $font-family-sans-serif:  "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !default
@@ -26,43 +28,81 @@ $font-family-serif:       "ff-tisa-web-pro", Georgia, "Times New Roman", Times, 
 // -------------------------------------------
 
 body
-	background-color: $sm-violet
+	background-color: #eee
 	color: $gray-lighter
+	-webkit-font-smoothing: antialiased
 
 
 // Navigation
 // -----------------------
 nav
-	background-color: rgba(0,0,0,0.1)
-	margin-top: -50px
-	a
-		color: rgba(255,255,255,0.4)
-		text-transform: uppercase
-		font-size: 0.9em
-	img 
-		height: 27px
-	.text-hide
-		padding-top: 12px !important
-		padding-bottom: 12px !important
-.mr-icon
-	background: url(/assets/images/we-are-sawhorse.jpg)
-	background-image: url(/assets/images/muckrack-icon.svg), none
-	background-repeat: no-repeat
-	background-position: center center
-	background-size: 100%
-	margin-right: 15px
-	margin-left: 15px
-	display: block
+	background-color: #fff
+	border: 0px
+	height: 96px
+	border-radius: 0px
 
-.shorty-icon
-	background: url(/assets/images/we-are-sawhorse.jpg)
-	background-image: url(/assets/images/shorty-icon.svg), none
-	background-repeat: no-repeat
-	background-position: center center
-	background-size: 100%
-	+text-hide
-	margin-right: 15px
-	margin-left: 15px
+	.navbar-brand
+		padding-bottom: 30px
+		padding-top: 30px
+		margin-top: 16px
+		width: 240px
+		background: url(/assets/images/we-are-sawhorse.jpg)
+		background-image: url(/assets/images/sawhorse.svg), none
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: 100%
+		+text-hide
+
+	.nav > li > a
+		color: $gray
+		padding: 3px 0px 
+		margin-left: 20px
+		margin-top: 33px
+		text-transform: uppercase
+		font-size: 1em
+	.nav > li > a:hover
+		background-color: transparent
+	.nav > li.active > a
+		border-bottom: 2px solid $gray-lighter
+
+
+
+
+
+// Carousel
+
+.carousel.fade
+	opacity: 1
+	.item
+		+transition(opacity, .7s)
+		position: absolute
+		left: 0 !important
+		top: 0
+		opacity: 0
+		width: 100%
+		display: block !important
+		z-index: 1
+		&:first-child
+			top: auto
+			position: relative
+		&.active
+			+transition(opacity, .7s)
+			opacity: 1
+			z-index: 2
+
+
+#home-carousel
+	background-color: #000
+	overflow: hidden
+	height: 500px
+
+	.item
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		min-height: 500px
+
+
 
 
 // Hero
@@ -72,70 +112,40 @@ header
 	text-align: center
 	padding-top: 150px
 	position: relative
-	background-color: rgba(49, 49, 61,0.8)
+
 	z-index: 1000
-	h1
-		background: url(/assets/images/we-are-sawhorse.jpg)
-		background-image: url(/assets/images/we-are-sawhorse.svg), none
-		background-repeat: no-repeat
-		background-position: center center
-		background-size: 100%
-		display: block
-		width: 60%
-		margin: 0px auto
-		min-height: 160px
-		+text-hide
+	color: white
+
+	height: 400px
+
+
 	h2
+		text-align: center
+		padding: 40px 10px
+		font-size: 30px
 		font-family: $font-family-serif
-		font-weight: 300
 		font-style: italic
-		color: mix($sm-violet, white, 55%)
+		font-weight: 700
+
+		font-size: 36px
+
+
+
 .header-bg
 	height: 540px
 	overflow: hidden
 	position: absolute
 	width: 100%
-	top: 0px
+	top: 96px
 	z-index: 700
 	.carousel-inner
 		height: 540px
 	img
 		min-height: 540px
 		min-width: 100%
-.carousel
-	.item 
-		+transition(opacity 0.5s)
-	.active.left, 
-	.active.right
-		left: 0
-		opacity: 0
-		z-index: 2
-	.next, 
-	.prev
-		left: 0
-		opacity: 1
-		z-index: 1
-
-
-	.carousel-image
-		+background-size(cover)
-		background-position: center center
-		height: 300px
 
 
 
-	.muckedup
-		background-image: url(../carousel/muckedup.jpg)
-	.adweek
-		background-image: url(../carousel/adweek.jpg)
-	.crowd
-		background-image: url(../carousel/crowd.jpg)
-	.vaynermedia
-		background-image: url(../carousel/vayner2.jpg)
-	.met
-		background-image: url(../carousel/met.jpg)
-	.muckrack-card
-		background-image: url(../carousel/muckrack-card.jpg)
 
 
 // Sub Sections
@@ -258,15 +268,9 @@ footer
 
 // JS specific styles
 // -----------------------
-nav.js-on-scroll
-	background-color: rgba(49, 49, 61, 0.85)
-	border-bottom: 1px solid lighten($sm-violet, 10%)
-	margin-top: 0px
-	+transition(all 0.5s)
-	a
-		color: white
-.header-bg .js-on-scroll
-	margin-top: $navbar-height
+
+
+
 
 // Wufoo form styles
 // -----------------------

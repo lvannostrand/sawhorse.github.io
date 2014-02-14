@@ -2677,35 +2677,22 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   .hidden-print, tr.hidden-print, th.hidden-print, td.hidden-print {
     display: none !important; } }
 body {
-  background-color: #31313d;
-  color: #eeeeee; }
+  background-color: #eeeeee;
+  color: #eeeeee;
+  -webkit-font-smoothing: antialiased; }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.1);
-  margin-top: -50px; }
-nav a {
-  color: rgba(255, 255, 255, 0.4);
-  text-transform: uppercase;
-  font-size: 0.9em; }
-nav img {
-  height: 27px; }
-nav .text-hide {
-  padding-top: 12px !important;
-  padding-bottom: 12px !important; }
-
-.mr-icon {
+  background-color: white;
+  border: 0px;
+  height: 96px;
+  border-radius: 0px; }
+nav .navbar-brand {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 16px;
+  width: 240px;
   background: url(/assets/images/we-are-sawhorse.jpg);
-  background-image: url(/assets/images/muckrack-icon.svg), none;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
-  margin-right: 15px;
-  margin-left: 15px;
-  display: block; }
-
-.shorty-icon {
-  background: url(/assets/images/we-are-sawhorse.jpg);
-  background-image: url(/assets/images/shorty-icon.svg), none;
+  background-image: url(/assets/images/sawhorse.svg), none;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -2713,81 +2700,79 @@ nav .text-hide {
   color: transparent;
   text-shadow: none;
   background-color: transparent;
-  border: 0;
-  margin-right: 15px;
-  margin-left: 15px; }
+  border: 0; }
+nav .nav > li > a {
+  color: #555555;
+  padding: 3px 0px;
+  margin-left: 20px;
+  margin-top: 33px;
+  text-transform: uppercase;
+  font-size: 1em; }
+nav .nav > li > a:hover {
+  background-color: transparent; }
+nav .nav > li.active > a {
+  border-bottom: 2px solid #eeeeee; }
+
+.carousel.fade {
+  opacity: 1; }
+.carousel.fade .item {
+  -webkit-transition: opacity, 0.7s;
+  transition: opacity, 0.7s;
+  position: absolute;
+  left: 0 !important;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  display: block !important;
+  z-index: 1; }
+.carousel.fade .item:first-child {
+  top: auto;
+  position: relative; }
+.carousel.fade .item.active {
+  -webkit-transition: opacity, 0.7s;
+  transition: opacity, 0.7s;
+  opacity: 1;
+  z-index: 2; }
+
+#home-carousel {
+  background-color: black;
+  overflow: hidden;
+  height: 500px; }
+#home-carousel .item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 500px; }
 
 header {
   height: 540px;
   text-align: center;
   padding-top: 150px;
   position: relative;
-  background-color: rgba(49, 49, 61, 0.8);
-  z-index: 1000; }
-header h1 {
-  background: url(/assets/images/we-are-sawhorse.jpg);
-  background-image: url(/assets/images/we-are-sawhorse.svg), none;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
-  display: block;
-  width: 60%;
-  margin: 0px auto;
-  min-height: 160px;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0; }
+  z-index: 1000;
+  color: white;
+  height: 400px; }
 header h2 {
+  text-align: center;
+  padding: 40px 10px;
+  font-size: 30px;
   font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
-  font-weight: 300;
   font-style: italic;
-  color: #8d8d94; }
+  font-weight: 700;
+  font-size: 36px; }
 
 .header-bg {
   height: 540px;
   overflow: hidden;
   position: absolute;
   width: 100%;
-  top: 0px;
+  top: 96px;
   z-index: 700; }
 .header-bg .carousel-inner {
   height: 540px; }
 .header-bg img {
   min-height: 540px;
   min-width: 100%; }
-
-.carousel .item {
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s; }
-.carousel .active.left, .carousel .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 2; }
-.carousel .next, .carousel .prev {
-  left: 0;
-  opacity: 1;
-  z-index: 1; }
-.carousel .carousel-image {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  height: 300px; }
-.carousel .muckedup {
-  background-image: url(../carousel/muckedup.jpg); }
-.carousel .adweek {
-  background-image: url(../carousel/adweek.jpg); }
-.carousel .crowd {
-  background-image: url(../carousel/crowd.jpg); }
-.carousel .vaynermedia {
-  background-image: url(../carousel/vayner2.jpg); }
-.carousel .met {
-  background-image: url(../carousel/met.jpg); }
-.carousel .muckrack-card {
-  background-image: url(../carousel/muckrack-card.jpg); }
 
 section.businesses {
   padding: 60px 0px; }
@@ -2886,18 +2871,6 @@ footer a:hover {
 footer small a {
   text-transform: uppercase;
   font-weight: 300; }
-
-nav.js-on-scroll {
-  background-color: rgba(49, 49, 61, 0.85);
-  border-bottom: 1px solid #484859;
-  margin-top: 0px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
-nav.js-on-scroll a {
-  color: white; }
-
-.header-bg .js-on-scroll {
-  margin-top: 50px; }
 
 .wufoo {
   margin-top: 15px; }
