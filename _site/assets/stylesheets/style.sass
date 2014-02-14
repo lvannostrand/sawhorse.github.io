@@ -7,9 +7,6 @@ $sm-orange: #F48120
 $shorty-teal: #2BAFA5
 $mr-blue: #048AC2
 
-
-
-
 // Bootstrap Overrides
 // -----------------------
 $font-family-sans-serif:  "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !default
@@ -28,8 +25,8 @@ $font-family-serif:       "ff-tisa-web-pro", Georgia, "Times New Roman", Times, 
 // -------------------------------------------
 
 body
-	background-color: #eee
-	color: $gray-lighter
+	background-color: lighten($gray-lighter, 4%)
+	color: $gray
 	-webkit-font-smoothing: antialiased
 
 
@@ -40,7 +37,6 @@ nav
 	border: 0px
 	height: 96px
 	border-radius: 0px
-
 	.navbar-brand
 		padding-bottom: 30px
 		padding-top: 30px
@@ -52,7 +48,6 @@ nav
 		background-position: center center
 		background-size: 100%
 		+text-hide
-
 	.nav > li > a
 		color: $gray
 		padding: 3px 0px 
@@ -66,11 +61,17 @@ nav
 		border-bottom: 2px solid $gray-lighter
 
 
-
-
-
 // Carousel
-
+// -----------------------
+#home-carousel
+	background-color: #000
+	overflow: hidden
+	height: 500px
+	.item
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		min-height: 500px
 .carousel.fade
 	opacity: 1
 	.item
@@ -91,34 +92,15 @@ nav
 			z-index: 2
 
 
-#home-carousel
-	background-color: #000
-	overflow: hidden
-	height: 500px
-
-	.item
-		background-size: cover
-		background-repeat: no-repeat
-		background-position: center center
-		min-height: 500px
-
-
-
-
 // Hero
 // -----------------------
 header
-	height: 540px
+	height: 500px
 	text-align: center
 	padding-top: 150px
 	position: relative
-
 	z-index: 1000
 	color: white
-
-	height: 400px
-
-
 	h2
 		text-align: center
 		padding: 40px 10px
@@ -126,10 +108,7 @@ header
 		font-family: $font-family-serif
 		font-style: italic
 		font-weight: 700
-
 		font-size: 36px
-
-
 
 .header-bg
 	height: 540px
@@ -143,6 +122,21 @@ header
 	img
 		min-height: 540px
 		min-width: 100%
+
+
+
+.muckrack,
+.shortyawards
+	border-bottom: 3px solid $gray-lighter
+	padding-top: 20px
+	height: 400px
+	h2
+		text-transform: uppercase
+		display: inline-block
+		padding-bottom: 5px
+		font-weight: 700
+		border-bottom: 2px solid $sm-orange
+
 
 
 
@@ -249,7 +243,7 @@ section.contact
 footer 
 	margin-top: $sm-gutter * 3
 	margin-bottom: $sm-gutter / 2
-	color: lighten($sm-violet, 30%)
+	color: $gray-light
 	a
 		font-weight: 600
 		&:hover 
