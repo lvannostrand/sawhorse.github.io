@@ -27,8 +27,13 @@ $font-family-serif:       "ff-tisa-web-pro", Georgia, "Times New Roman", Times, 
 body
 	background-color: lighten($gray-lighter, 4%)
 	color: $gray
+
+
+h1, h2, h3
 	-webkit-font-smoothing: antialiased
 
+h1, h2, h3, h4
+	text-rendering: optimizeLegibility
 
 // Navigation
 // -----------------------
@@ -132,12 +137,17 @@ header
 	height: 400px
 	h2
 		text-transform: uppercase
-		display: inline-block
+		margin-bottom: 0px
 		padding-bottom: 5px
 		font-weight: 700
 		border-bottom: 2px solid $sm-orange
-
-
+	h3
+		font-family: $font-family-serif
+		font-size: 18px
+		margin-top: 6px
+		color: $gray-light
+		font-style: italic
+		letter-spacing: -0.02em
 
 
 
@@ -184,41 +194,20 @@ section.businesses
 		margin-top: 0px
 		color: lighten($mr-blue, 5%)
 		display: block
-	.muckrack
-		img 
-			padding: 20px 30px 0px 30px
 
-	.shortyawards
-		img
-			padding: 0px 60px
-		a
-			color: $shorty-teal
 
-section.wearefor
-	padding: 80px 0px 50px
-	h2
-		font-size: 1.7em
-		text-transform: uppercase
-		text-align: right
-		color: lighten($sm-violet, 70%)
-	h3
-		font-family: $font-family-serif
-		text-transform: uppercase
-		font-size: 1.15em
-		letter-spacing: 1px
-		color: lighten($sm-violet, 45%)
-	a
-		color: $sm-orange
-		font-weight: 600
+
 
 section.contact
 	padding-top: 60px
 	h2
-		color: white
-		font-size: 1.7em
+		font-weight: 700
+		font-size: 1.75em
 		text-align: right
 		text-transform: uppercase
-		color: lighten($sm-violet, 70%)
+		margin-bottom: 0px
+		padding-bottom: 5px
+
 .sm-contact-sidebar
 	ul 
 		padding: 0
@@ -227,10 +216,11 @@ section.contact
 		float: right
 	li 
 		list-style-type: none
-		border-bottom: 1px solid lighten($sm-violet, 10%)
+		border-bottom: 1px solid lighten($gray-light, 30%)
 		padding: 8px 0px
 		a
-			color: lighten($sm-violet, 60%)
+			color: mix($gray-lighter, $sm-violet, 30%)
+
 	i 
 		width: 18px
 		text-align: center
@@ -273,33 +263,35 @@ footer
 	input, textarea
 		+border-radius(4px)
 		@extend .form-control
-		background-color: lighten($sm-violet, 5%)
-		border: 1px solid lighten($sm-violet, 15%)
-		color: white
+
 	input.text
 		padding: 5px
 	input.submit
 		width: 100%
 		text-transform: uppercase
-		color: lighten($sm-violet, 50%)
+		//color: lighten($sm-violet, 50%)
 		font-family: $font-family-serif
-		background-color: $sm-violet
+		background-color: lighten($gray-light, 8%)
+		border: 0px
 		&:hover 
-			background-color: lighten($sm-violet, 15%)
+			//background-color: lighten($sm-violet, 15%)
 	span.req
 		color: $sm-orange
 		margin-left: 4px !important
-		font-size: 16px
+		font-size: 18px
+		font-weight: 100
+		-webkit-font-smoothing: antialiased
+
 	textarea.textarea
 		padding: 9px
 	label
-		color: lighten($sm-violet, 40%)
-		font-family: $font-family-serif
-		font-weight: 300
-		font-size: 0.85em
+		color: lighten($sm-violet, 30%)
+		//font-family: $font-family-serif
+		font-weight: 500
+		font-size: 1em
 		text-transform: uppercase
 		@media (max-width: $screen-md-max)
-			font-size: 0.74em
+			font-size: 0.9em
 		@media (max-width: $screen-sm-max)
 			font-size: 1em
 	li 
