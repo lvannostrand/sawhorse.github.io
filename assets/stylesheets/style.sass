@@ -140,6 +140,7 @@ header
 		margin-bottom: 0px
 		padding-bottom: 5px
 		font-weight: 700
+		margin-top: 30px
 		border-bottom: 2px solid $sm-orange
 	h3
 		font-family: $font-family-serif
@@ -212,6 +213,7 @@ section.contact
 	ul 
 		padding: 0
 		text-align: right
+		margin-top: 10px
 		width: 80%
 		float: right
 	li 
@@ -250,16 +252,13 @@ footer
 
 
 
-// JS specific styles
-// -----------------------
-
-
-
 
 // Wufoo form styles
 // -----------------------
 .wufoo
 	margin-top: 15px
+	font-family: $font-family-serif
+
 	input, textarea
 		+border-radius(4px)
 		@extend .form-control
@@ -271,10 +270,11 @@ footer
 		text-transform: uppercase
 		//color: lighten($sm-violet, 50%)
 		font-family: $font-family-serif
-		background-color: lighten($gray-light, 8%)
+		background-color: lighten($gray-light, 30%)
 		border: 0px
 		&:hover 
-			//background-color: lighten($sm-violet, 15%)
+			background-color: lighten($gray-light, 25%)
+			color: lighten($sm-violet, 5%)
 	span.req
 		color: $sm-orange
 		margin-left: 4px !important
@@ -286,7 +286,6 @@ footer
 		padding: 9px
 	label
 		color: lighten($sm-violet, 30%)
-		//font-family: $font-family-serif
 		font-weight: 500
 		font-size: 1em
 		text-transform: uppercase

@@ -2787,6 +2787,7 @@ header h2 {
   margin-bottom: 0px;
   padding-bottom: 5px;
   font-weight: 700;
+  margin-top: 30px;
   border-bottom: 2px solid #f48120; }
 .muckrack h3, .shortyawards h3 {
   font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
@@ -2846,6 +2847,7 @@ section.contact h2 {
 .sm-contact-sidebar ul {
   padding: 0;
   text-align: right;
+  margin-top: 10px;
   width: 80%;
   float: right; }
 .sm-contact-sidebar li {
@@ -2873,7 +2875,8 @@ footer small a {
   font-weight: 300; }
 
 .wufoo {
-  margin-top: 15px; }
+  margin-top: 15px;
+  font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif; }
 .wufoo input, .wufoo textarea {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2886,8 +2889,11 @@ footer small a {
   width: 100%;
   text-transform: uppercase;
   font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
-  background-color: #adadad;
+  background-color: #e6e6e6;
   border: 0px; }
+.wufoo input.submit:hover {
+  background-color: #d9d9d9;
+  color: #3c3c4b; }
 .wufoo span.req {
   color: #f48120;
   margin-left: 4px !important;
