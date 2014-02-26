@@ -188,8 +188,21 @@ header
 		padding-right: $sm-gutter/2
 		margin-top: $sm-gutter * 1.5
 
+.hiring-marker
+	background: url(/assets/images/joinus.png)
+	background-size: 100px
+	background-repeat: no-repeat
+	width: 100px
+	height: 50px
+	+transition(1s background all)
+	&:hover
+		background: url(/assets/images/joinus-line.png)
+		background-size: 100px
+		background-repeat: no-repeat
+		width: 100px
+		height: 50px
 
-
+	
 // Sub Sections
 // -----------------------
 section.contact
