@@ -28,12 +28,15 @@ body
 	background-color: lighten($gray-lighter, 4%)
 	color: $gray
 
+p
+	-webkit-font-kerning: auto
+	text-rendering: optimizeLegibility
+
 
 h1, h2, h3
 	-webkit-font-smoothing: antialiased
 
 h1, h2, h3, h4
-	text-rendering: optimizeLegibility
 
 // Navigation
 // -----------------------
@@ -71,12 +74,12 @@ nav
 #home-carousel
 	background-color: #000
 	overflow: hidden
-	height: 500px
+	height: 640px
 	.item
 		background-size: cover
 		background-repeat: no-repeat
 		background-position: center center
-		min-height: 500px
+		min-height: 640px
 .carousel.fade
 	opacity: 1
 	.item
@@ -100,105 +103,95 @@ nav
 // Hero
 // -----------------------
 header
-	height: 500px
+	height: 640px
 	text-align: center
-	padding-top: 150px
+	padding-top: 30px
 	position: relative
 	z-index: 1000
 	color: white
 	h2
 		text-align: center
 		padding: 40px 10px
-		font-size: 30px
+		font-size: 34px
 		font-family: $font-family-serif
 		font-style: italic
 		font-weight: 700
 		font-size: 36px
 
 .header-bg
-	height: 540px
+	height: 640px
 	overflow: hidden
 	position: absolute
 	width: 100%
 	top: 96px
 	z-index: 700
 	.carousel-inner
-		height: 540px
+		height: 640px
 	img
-		min-height: 540px
+		min-height: 640px
 		min-width: 100%
 
+.logo-box-container
+	margin-top: $sm-gutter
 
+.slant
+	position: relative
+	left: 40px
+	top: 0px
+	height: 300px
+	z-index: 400
+
+.logo-box
+	+box-shadow(0px 1px 14px 0px rgba(0,0,0,0.22), inset 0px 0px 1px 0px rgba(255,255,255,0.20))	
+	background: rgba(30,30,61,0.70)
+	padding: $sm-gutter
+	position: relative
+	z-index: 350
+	margin-top: -245px
+	img 
+		width: 100%
+	.last
+		text-align: right
+	.logo-mr
+		padding: 45px 0px
+	.logo-shorty
+		padding: 8px 0px
+		width: 70%
 
 .muckrack,
 .shortyawards
 	border-bottom: 3px solid $gray-lighter
-	padding-top: 20px
-	height: 400px
+	padding: $sm-gutter * 1.5  0px
+
 	h2
 		text-transform: uppercase
-		margin-bottom: 0px
-		padding-bottom: 5px
 		font-weight: 700
+		padding-bottom: 5px
+		margin-bottom: 0px
 		margin-top: 30px
 		border-bottom: 2px solid $sm-orange
 	h3
 		font-family: $font-family-serif
 		font-size: 18px
+		font-style: italic
 		margin-top: 6px
 		color: $gray-light
-		font-style: italic
 		letter-spacing: -0.02em
-
+	img 
+		width: 100%
+		border-radius: 3px
+		margin-left: $sm-gutter/2
+		+box-shadow(0px 1px 3px rgba(0,0,0,0.2))
+	p
+		font-size: 1.2em
+		line-height: 1.2em
+		padding-right: $sm-gutter/2
+		margin-top: $sm-gutter * 1.5
 
 
 
 // Sub Sections
 // -----------------------
-section.businesses
-	padding: 60px 0px
-	img 
-		width: 100%
-		margin: 0px auto
-		text-align: center
-	h2
-		font-size: 1.7em
-		text-transform: uppercase
-		text-align: center
-
-		margin-bottom: 50px
-		color: lighten($sm-violet, 70%)
-
-
-	h3
-		font-weight: 300
-		font-style: italic
-		font-family: $font-family-serif
-		font-size: 1.25em
-		text-align: center
-		color: $gray-lighter
-		margin-top: 15px
-		margin-bottom: 6px
-	p
-		margin-top: 10px
-		color: lighten($sm-violet, 50%)
-		font-size: 1.15em
-		line-height: 1.2em
-		text-align: center
-		padding: 10px $sm-gutter
-
-	a 
-		text-transform: uppercase
-		text-align: center
-		font-weight: 600
-		font-size: 1em
-		margin-top: 0px
-		color: lighten($mr-blue, 5%)
-		display: block
-
-
-
-
 section.contact
 	padding-top: 60px
 	h2

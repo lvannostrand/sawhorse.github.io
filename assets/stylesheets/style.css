@@ -2680,11 +2680,12 @@ body {
   background-color: #f9f9f9;
   color: #555555; }
 
+p {
+  -webkit-font-kerning: auto;
+  text-rendering: optimizeLegibility; }
+
 h1, h2, h3 {
   -webkit-font-smoothing: antialiased; }
-
-h1, h2, h3, h4 {
-  text-rendering: optimizeLegibility; }
 
 nav {
   background-color: white;
@@ -2721,12 +2722,12 @@ nav .nav > li.active > a {
 #home-carousel {
   background-color: black;
   overflow: hidden;
-  height: 500px; }
+  height: 640px; }
 #home-carousel .item {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 500px; }
+  min-height: 640px; }
 
 .carousel.fade {
   opacity: 1; }
@@ -2750,89 +2751,90 @@ nav .nav > li.active > a {
   z-index: 2; }
 
 header {
-  height: 500px;
+  height: 640px;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 30px;
   position: relative;
   z-index: 1000;
   color: white; }
 header h2 {
   text-align: center;
   padding: 40px 10px;
-  font-size: 30px;
+  font-size: 34px;
   font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 700;
   font-size: 36px; }
 
 .header-bg {
-  height: 540px;
+  height: 640px;
   overflow: hidden;
   position: absolute;
   width: 100%;
   top: 96px;
   z-index: 700; }
 .header-bg .carousel-inner {
-  height: 540px; }
+  height: 640px; }
 .header-bg img {
-  min-height: 540px;
+  min-height: 640px;
   min-width: 100%; }
+
+.logo-box-container {
+  margin-top: 25px; }
+
+.slant {
+  position: relative;
+  left: 40px;
+  top: 0px;
+  height: 300px;
+  z-index: 400; }
+
+.logo-box {
+  -webkit-box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.22), inset 0px 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.22), inset 0px 0px 1px 0px rgba(255, 255, 255, 0.2);
+  background: rgba(30, 30, 61, 0.7);
+  padding: 25px;
+  position: relative;
+  z-index: 350;
+  margin-top: -245px; }
+.logo-box img {
+  width: 100%; }
+.logo-box .last {
+  text-align: right; }
+.logo-box .logo-mr {
+  padding: 45px 0px; }
+.logo-box .logo-shorty {
+  padding: 8px 0px;
+  width: 70%; }
 
 .muckrack, .shortyawards {
   border-bottom: 3px solid #eeeeee;
-  padding-top: 20px;
-  height: 400px; }
+  padding: 37.5px 0px; }
 .muckrack h2, .shortyawards h2 {
   text-transform: uppercase;
-  margin-bottom: 0px;
-  padding-bottom: 5px;
   font-weight: 700;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
   margin-top: 30px;
   border-bottom: 2px solid #f48120; }
 .muckrack h3, .shortyawards h3 {
   font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
+  font-style: italic;
   margin-top: 6px;
   color: #999999;
-  font-style: italic;
   letter-spacing: -0.02em; }
-
-section.businesses {
-  padding: 60px 0px; }
-section.businesses img {
+.muckrack img, .shortyawards img {
   width: 100%;
-  margin: 0px auto;
-  text-align: center; }
-section.businesses h2 {
-  font-size: 1.7em;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 50px;
-  color: #e7e7ec; }
-section.businesses h3 {
-  font-weight: 300;
-  font-style: italic;
-  font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
-  font-size: 1.25em;
-  text-align: center;
-  color: #eeeeee;
-  margin-top: 15px;
-  margin-bottom: 6px; }
-section.businesses p {
-  margin-top: 10px;
-  color: #afafbe;
-  font-size: 1.15em;
+  border-radius: 3px;
+  margin-left: 12.5px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); }
+.muckrack p, .shortyawards p {
+  font-size: 1.2em;
   line-height: 1.2em;
-  text-align: center;
-  padding: 10px 25px; }
-section.businesses a {
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1em;
-  margin-top: 0px;
-  color: #059cdb;
-  display: block; }
+  padding-right: 12.5px;
+  margin-top: 37.5px; }
 
 section.contact {
   padding-top: 60px; }
