@@ -1,0 +1,24 @@
+---
+layout: page
+title: Our Team
+---
+
+<section>
+	<h2>The Team</h2>
+
+	<div class="row">
+		{% for member in site.data.members %}
+			<div class="col-sm-4  team-member">
+
+					<img src="" />
+
+			      <h3>{{ member.name }}</h3>
+			      <p>{{ member.role }}</p>
+
+			    <a href="https://twitter.com/{{ member.twitter }}">
+			    	@{{ member.twitter }}
+			    </a>
+			</div>
+		{% endfor %}
+	</div>
+</section>
