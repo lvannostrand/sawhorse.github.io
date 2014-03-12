@@ -21,24 +21,31 @@ $font-family-serif:       "ff-tisa-web-pro", Georgia, "Times New Roman", Times, 
 
 
 // -------------------------------------------
-// Styles
+// General Styles
 // -------------------------------------------
 
 body
 	background-color: lighten($gray-lighter, 4%)
 	color: $gray
-
 p
 	-webkit-font-kerning: auto
 	text-rendering: optimizeLegibility
-
 h1, h2
 	-webkit-font-smoothing: antialiased
+section
+	padding-top: $sm-gutter
+	h2
+		font-weight: 700
+		font-size: 1.75em
+		text-transform: uppercase
+		margin-bottom: 10px
+		padding-bottom: 5px
 
 
-
+// -------------------------------------------
 // Navigation
-// -----------------------
+// -------------------------------------------
+
 nav
 	background-color: #fff
 	border: 0px
@@ -69,39 +76,10 @@ nav
 
 
 
-.mosaicflow__column
-	float: left
+// -------------------------------------------
+// Landing Page
+// -------------------------------------------
 
-
-.fun-block
-	position: relative
-
-	img 
-		display: block
-		width: 100%
-		max-width: 500px
-		height: auto
-	a
-		color: $sm-orange
-		font-size: 0.9em
-	.caption
-		margin: 0px
-		height: 15px
-		line-height: 1em
-		padding-left: 10px
-		margin-top: -15px
-		overflow: hidden
-		color: white
-		position: relative
-		top: -5px
-		font-weight: bold
-		text-shadow: 0px 1px 1px black
-
-
-
-
-// Carousel & Hero
-// -----------------------
 header
 	height: 360px
 	text-align: center
@@ -162,9 +140,6 @@ header
 		min-height: 360px
 		min-width: 100%
 
-
-// Sub Sections
-// -----------------------
 .muckrack,
 .shortyawards
 	border-bottom: 3px solid $gray-lighter
@@ -203,14 +178,10 @@ header
 		font-size: 0.9em
 		margin-top: $sm-gutter
 
-section
-	padding-top: $sm-gutter
-	h2
-		font-weight: 700
-		font-size: 1.75em
-		text-transform: uppercase
-		margin-bottom: 10px
-		padding-bottom: 5px
+
+// -------------------------------------------
+// Pages
+// -------------------------------------------
 
 .team-member
 	margin-top: 25px
@@ -219,6 +190,9 @@ section
 		margin: 5px 0px
 		font-weight: 700
 		font-size: 1.2em
+	a 
+		color: $sm-orange
+		font-weight: bold
 	p 
 		margin: 3px 0px
 		font-family: $font-family-serif
@@ -246,9 +220,35 @@ section
 		margin-left: 5px
 		color: lighten($sm-violet, 40%)
 
+.fun-block
+	position: relative
+	img 
+		display: block
+		width: 100%
+		max-width: 500px
+		height: auto
+	a
+		color: $sm-orange
+		font-size: 0.9em
+	.caption
+		margin: 0px
+		height: 15px
+		line-height: 1em
+		padding-left: 10px
+		margin-top: -15px
+		overflow: hidden
+		color: white
+		position: relative
+		top: -5px
+		font-weight: bold
+		text-shadow: 0px 1px 1px black
 
+
+
+// -------------------------------------------
 // Footer
-// -----------------------
+// -------------------------------------------
+
 footer 
 	margin-top: $sm-gutter * 3
 	margin-bottom: $sm-gutter / 2
@@ -257,15 +257,33 @@ footer
 		font-weight: 600
 		&:hover 
 			color: $sm-violet
-	small a
+	small
 		text-transform: uppercase
-		font-weight: 300
+		a
+			font-weight: 300
+
+.footer-social
+	a 
+		color: mix($gray-lighter, $gray-light)
+		float: left
+		margin-left: 20px
+		+transition(1s color all)
+	a:hover 
+		color: $gray-light
+	i 
+		font-size: 20px
+
+.footer-info
+	a
+		color: lighten($sm-violet, 30%)
+
 .hiring-marker
 	background: url(/assets/images/joinus.png)
 	background-size: 100px
 	background-repeat: no-repeat
 	width: 100px
 	height: 50px
+	display: block
 	+transition(1s background all)
 	&:hover
 		background: url(/assets/images/joinus-line.png)
@@ -275,10 +293,20 @@ footer
 		height: 50px
 
 
-// Responsive styles
-// -----------------------
-@media (max-width: 400px)
 
+// -------------------------------------------
+// JS
+// -------------------------------------------
+
+.mosaicflow__column
+	float: left
+
+
+
+// -------------------------------------------
+// Responsive styles
+// -------------------------------------------
+@media (max-width: 400px)
 
 
 

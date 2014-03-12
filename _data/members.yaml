@@ -1,31 +1,39 @@
 - name: Greg Galant
   twitter: galant
-  role: Chief Executive Officer
+  role: CEO, Co-founder
+  image: greg.jpg
 
 - name: Lee Semel
   twitter: semel
-  role: Chief Technology Officer
+  role: CTO, Co-founder
+  image: lee.jpeg
 
 - name: Natan Edelsburg
   twitter: twatan
   role: Senior Vice President
+  image: natan.jpg
 
 - name: Rob Shapiro
   twitter: rob_shap
   role: Senior Account Strategist
+  image: rob.jpeg
 
 - name: Lauren Van Nostrand
   twitter: lvannos
   role: Account Manager
+  image: lauren.jpg
 
 - name: Nicole Dominguez
   twitter: sodevious
   role: Front End Developer
+  image: nicole.jpeg
 
 - name: Zachary Ostrow
   twitter: zacharyostrow
   role: Producer
+  image: zach.jpg
 
 - name: Megan Frantz
   twitter: megsfrantz
   role: Producer
+  image: megan.jpeg

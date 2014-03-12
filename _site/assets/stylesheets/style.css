@@ -2687,6 +2687,15 @@ p {
 h1, h2 {
   -webkit-font-smoothing: antialiased; }
 
+section {
+  padding-top: 25px; }
+section h2 {
+  font-weight: 700;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 5px; }
+
 nav {
   background-color: white;
   border: 0px;
@@ -2718,32 +2727,6 @@ nav .nav > li > a:hover {
   background-color: transparent; }
 nav .nav > li.active > a {
   border-bottom: 2px solid #eeeeee; }
-
-.mosaicflow__column {
-  float: left; }
-
-.fun-block {
-  position: relative; }
-.fun-block img {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  height: auto; }
-.fun-block a {
-  color: #f48120;
-  font-size: 0.9em; }
-.fun-block .caption {
-  margin: 0px;
-  height: 15px;
-  line-height: 1em;
-  padding-left: 10px;
-  margin-top: -15px;
-  overflow: hidden;
-  color: white;
-  position: relative;
-  top: -5px;
-  font-weight: bold;
-  text-shadow: 0px 1px 1px black; }
 
 header {
   height: 360px;
@@ -2848,15 +2831,6 @@ header h3 {
   font-size: 0.9em;
   margin-top: 25px; }
 
-section {
-  padding-top: 25px; }
-section h2 {
-  font-weight: 700;
-  font-size: 1.75em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  padding-bottom: 5px; }
-
 .team-member {
   margin-top: 25px;
   margin-bottom: 10px; }
@@ -2864,6 +2838,9 @@ section h2 {
   margin: 5px 0px;
   font-weight: 700;
   font-size: 1.2em; }
+.team-member a {
+  color: #f48120;
+  font-weight: bold; }
 .team-member p {
   margin: 3px 0px;
   font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif; }
@@ -2890,6 +2867,29 @@ section h2 {
   margin-left: 5px;
   color: #9292a8; }
 
+.fun-block {
+  position: relative; }
+.fun-block img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto; }
+.fun-block a {
+  color: #f48120;
+  font-size: 0.9em; }
+.fun-block .caption {
+  margin: 0px;
+  height: 15px;
+  line-height: 1em;
+  padding-left: 10px;
+  margin-top: -15px;
+  overflow: hidden;
+  color: white;
+  position: relative;
+  top: -5px;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px black; }
+
 footer {
   margin-top: 75px;
   margin-bottom: 12.5px;
@@ -2898,9 +2898,24 @@ footer a {
   font-weight: 600; }
 footer a:hover {
   color: #31313d; }
+footer small {
+  text-transform: uppercase; }
 footer small a {
-  text-transform: uppercase;
   font-weight: 300; }
+
+.footer-social a {
+  color: #c3c3c3;
+  float: left;
+  margin-left: 20px;
+  -webkit-transition: 1s color all;
+  transition: 1s color all; }
+.footer-social a:hover {
+  color: #999999; }
+.footer-social i {
+  font-size: 20px; }
+
+.footer-info a {
+  color: #767691; }
 
 .hiring-marker {
   background: url(/assets/images/joinus.png);
@@ -2908,6 +2923,7 @@ footer small a {
   background-repeat: no-repeat;
   width: 100px;
   height: 50px;
+  display: block;
   -webkit-transition: 1s background all;
   transition: 1s background all; }
 .hiring-marker:hover {
@@ -2916,6 +2932,9 @@ footer small a {
   background-repeat: no-repeat;
   width: 100px;
   height: 50px; }
+
+.mosaicflow__column {
+  float: left; }
 
 .wufoo {
   margin-top: 15px;
