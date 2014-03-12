@@ -19,8 +19,10 @@
 - image: godaddy.jpg
 
 - image: natan2.png
+  caption: Natan got a new car!
 
 - image: bananastand.jpg
+  caption: There's always money in the banana stand.
 
 - link: https://twitter.com/sodevious/status/421440754909593600/photo/1
   image: confcall.png
