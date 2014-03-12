@@ -15,11 +15,16 @@
 - image: zachlunch.jpg
 
 - image: welcometourists.jpg
+  caption: Saying hello to the tourists in SoHo!
 
 - image: godaddy.jpg
 
 - image: natan2.png
   caption: Natan got a new car!
+
+- image: leepuppet.jpg
+
+- image: blueberries.jpg
 
 - image: bananastand.jpg
   caption: There's always money in the banana stand.
@@ -30,3 +35,12 @@
 
 - link: https://twitter.com/gregory/status/419260838453981184/photo/1
   image: trello.png
+
+- link: https://twitter.com/BritVanB/status/367403217065242624
+  caption: Rob in the Sawhorse office rocking his GoJo hands free head set 
+  image: robheadset.jpg
+
+- link: https://twitter.com/JeffElder/status/362444704140386304/photo/1
+  image: yiying.jpg
+  caption: Fail Whale designer Yiying and Greg showing off Muck Rack's Overworked Octopus mascot 
+
