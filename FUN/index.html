@@ -2,3 +2,15 @@
 layout: fun
 title: We're a fun group
 ---
+
+{% for block in site.data.blocks %}
+<div class="fun-block">
+    <img src="/assets/fun/{{ block.image }}"  alt="{{ block.caption }}">
+    <div class="caption">
+    	{{ block.caption }}
+		{% if block.link %}
+		   <a href="{{ block.link }}"><i class="fa fa-external-link"></i></a> 
+		{% endif %}
+    </div>
+</div>
+{% endfor %}
