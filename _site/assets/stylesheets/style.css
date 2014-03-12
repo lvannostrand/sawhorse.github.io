@@ -2710,7 +2710,7 @@ nav .navbar-brand {
 nav .nav > li > a {
   color: #555555;
   padding: 3px 0px;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-top: 33px;
   text-transform: uppercase;
   font-size: 1em; }
@@ -2718,6 +2718,27 @@ nav .nav > li > a:hover {
   background-color: transparent; }
 nav .nav > li.active > a {
   border-bottom: 2px solid #eeeeee; }
+
+header {
+  height: 360px;
+  text-align: center;
+  padding-top: 30px;
+  position: relative;
+  z-index: 1000;
+  color: white; }
+header h2 {
+  text-align: center;
+  font-size: 34px;
+  font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 50px; }
+header h3 {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  margin-top: 80px;
+  color: rgba(255, 255, 255, 0.9); }
 
 #home-carousel {
   background-color: black;
@@ -2750,27 +2771,6 @@ nav .nav > li.active > a {
   opacity: 1;
   z-index: 2; }
 
-header {
-  height: 360px;
-  text-align: center;
-  padding-top: 30px;
-  position: relative;
-  z-index: 1000;
-  color: white; }
-header h2 {
-  text-align: center;
-  font-size: 34px;
-  font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 36px;
-  margin-top: 50px; }
-header h3 {
-  text-transform: uppercase;
-  font-size: 1.25em;
-  margin-top: 80px;
-  color: rgba(255, 255, 255, 0.9); }
-
 .header-bg {
   height: 360px;
   overflow: hidden;
@@ -2783,37 +2783,6 @@ header h3 {
 .header-bg img {
   min-height: 360px;
   min-width: 100%; }
-
-.logo-box-container {
-  margin-top: 25px;
-  padding: 0px 65px; }
-
-.slant {
-  position: relative;
-  left: 15px;
-  top: 0px;
-  height: 200px;
-  z-index: 400; }
-
-.logo-box {
-  -webkit-box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.22), inset 0px 0px 1px 0px rgba(255, 255, 255, 0.2);
-  box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.22), inset 0px 0px 1px 0px rgba(255, 255, 255, 0.2);
-  background: rgba(30, 30, 61, 0.7);
-  padding: 12.5px;
-  position: relative;
-  z-index: 350;
-  margin-top: -165px; }
-.logo-box img {
-  width: 100%; }
-.logo-box .logo-mr {
-  width: 80%;
-  padding: 25px 0px 14px 0px; }
-.logo-box .logo-shorty {
-  padding: 8px 20px 0px 0px;
-  width: 50%; }
-.logo-box h4 {
-  font-size: 1em;
-  color: rgba(255, 255, 255, 0.8); }
 
 .muckrack, .shortyawards {
   border-bottom: 3px solid #eeeeee;
@@ -2852,21 +2821,6 @@ header h3 {
   color: #555555;
   font-size: 0.9em;
   margin-top: 25px; }
-
-.hiring-marker {
-  background: url(/assets/images/joinus.png);
-  background-size: 100px;
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 50px;
-  -webkit-transition: 1s background all;
-  transition: 1s background all; }
-.hiring-marker:hover {
-  background: url(/assets/images/joinus-line.png);
-  background-size: 100px;
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 50px; }
 
 section {
   padding-top: 25px; }
@@ -2921,6 +2875,21 @@ footer a:hover {
 footer small a {
   text-transform: uppercase;
   font-weight: 300; }
+
+.hiring-marker {
+  background: url(/assets/images/joinus.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 50px;
+  -webkit-transition: 1s background all;
+  transition: 1s background all; }
+.hiring-marker:hover {
+  background: url(/assets/images/joinus-line.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 50px; }
 
 .wufoo {
   margin-top: 15px;
