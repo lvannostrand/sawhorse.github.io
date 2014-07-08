@@ -26,13 +26,17 @@
 
 - image: flappybird.gif
 
+- image: blueberries.jpg
+
 - image: whale.gif
+
+- image: accio-design.png
 
 - image: lucas.png
 
 - image: leepuppet.jpg
 
-- image: blueberries.jpg
+- image: shorty-photobooth.png
 
 - image: bananastand.jpg
   caption: There's always money in the banana stand.
@@ -43,6 +47,8 @@
 
 - link: https://twitter.com/gregory/status/419260838453981184/photo/1
   image: trello.png
+
+- image: shorty-selfie.png
 
 - link: https://twitter.com/BritVanB/status/367403217065242624
   caption: Rob in the Sawhorse office rocking his GoJo hands free head set 
