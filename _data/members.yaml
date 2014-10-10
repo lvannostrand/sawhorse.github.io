@@ -32,6 +32,16 @@
   twitter: megsfrantz
   role: Producer
   image: megan.jpeg
+  
+- name: Robert Maisano
+  twitter: Robert_Maisano
+  role: Business Development Associate
+  image: robert.jpeg
+  
+- name: Andrew Flynn
+  twitter: DroidMegatron
+  role: Business Development Associate
+  image: andrew.jpeg
 
 - name: Gigi Chen
   twitter: giginator
