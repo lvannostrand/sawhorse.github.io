@@ -2906,6 +2906,7 @@ header h3 {
 
 .team-member {
   margin-top: 25px;
+  height: 80px;
   margin-bottom: 10px; }
 .team-member h3 {
   margin: 5px 0px;
