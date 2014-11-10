@@ -18,35 +18,35 @@
   role: Director of Product Strategy
   image: rob.jpeg
 
-- name: Lauren Van Nostrand
-  twitter: lvannos
-  role: Account Manager
-  image: lauren.jpg
-
 - name: Nicole Dominguez
   twitter: sodevious
   role: Senior Product Designer & Front End Developer
   image: nicole.jpeg
 
+- name: Lauren Van Nostrand
+  twitter: lvannos
+  role: Account Manager
+  image: lauren.jpg
+
 - name: Megan Frantz
   twitter: megsfrantz
   role: Producer
   image: megan.jpeg
-  
+
 - name: Robert Maisano
   twitter: Robert_Maisano
   role: Business Development Associate
   image: robert.jpg
-  
+
 - name: Andrew Flynn
   twitter: DroidMegatron
   role: Business Development Associate
   image: andrew.jpg
-  
+
 - name: Cassandra Bianco
   twitter: CNBianco
   role: Account Manager
-  image: cassandra.jpg
+  image: cassandra.png
 
 - name: Gigi Chen
   twitter: giginator
