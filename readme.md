@@ -24,3 +24,7 @@
 * `gem install jekyll`
 
 * `jekyll serve --watch`
+
+---
+
+To add / edit / remove team members: https://github.com/sawhorse/sawhorse.github.io/blob/master/_data/members.yaml
