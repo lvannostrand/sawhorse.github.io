@@ -25,7 +25,7 @@
 
 - name: Lauren Van Nostrand
   twitter: lvannos
-  role: Account Manager
+  role: Editor
   image: lauren.jpg
 
 - name: Megan Frantz
@@ -33,22 +33,12 @@
   role: Producer
   image: megan.jpeg
 
-- name: Robert Maisano
-  twitter: Robert_Maisano
-  role: Business Development Associate
-  image: robert.jpg
-
 - name: Andrew Flynn
   twitter: DroidMegatron
-  role: Business Development Associate
+  role: Business Development Manager
   image: andrew.jpg
 
 - name: Cassandra Bianco
   twitter: CNBianco
   role: Account Manager
   image: cassandra.png
-
-- name: Gigi Chen
-  twitter: giginator
-  role: Social Media and Event Associate
-  image: gigi.jpg
