@@ -2974,7 +2974,10 @@ header h3 {
 .jobs h4 {
   font-weight: 600; }
 .jobs .job {
-  margin-top: 60px;
+  margin-top: 20px;
+  margin-bottom: 60px; }
+
+.jobs-list {
   margin-bottom: 60px; }
 
 footer {
