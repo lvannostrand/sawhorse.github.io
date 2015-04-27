@@ -15,9 +15,11 @@ title: Our Team
 			      <h3>{{ member.name }}</h3>
 			      <p>{{ member.role }}</p>
 
+			    {% if member.twitter %}
 			    <a href="https://twitter.com/{{ member.twitter }}">
 			    	@{{ member.twitter }}
 			    </a>
+			    {% endif %}
 			</div>
 		{% endfor %}
 	</div>
