@@ -30,7 +30,7 @@
 
 - name: Megan Frantz
   twitter: megsfrantz
-  role: Producer
+  role: Senior Producer
   image: megan.jpeg
 
 - name: Andrew Flynn
@@ -38,12 +38,22 @@
   role: Business Development Manager
   image: andrew.jpg
 
-- name: Cassandra Bianco
-  twitter: CNBianco
-  role: Account Manager
-  image: cassandra.png
-
 - name: Teddy Bennett
   twitter: beddytennett
   role: Business Development Associate
   image: teddy.jpeg
+
+- name: Kevin Lee
+  twitter: kleeee23
+  role: Business Development Manager
+  image: kevin.jpg
+
+- name: Nik Aliye
+  twitter: nik_nak85
+  role: Producer
+  image: nik.png
+
+- name: Nora Tane
+  role: Customer Success Manager
+  image: nora.png
+
