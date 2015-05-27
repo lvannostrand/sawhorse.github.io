@@ -1,14 +1,17 @@
 ---
-layout: page
+layout: wide-page
 ---
-<div class="row jobs">
-    <div class="col-md-8 col-md-offset-2">
-
-        <div class="job">
-   <a href="/jobs">&larr; Back to all positions</a>
-
-        {{ content }}
+<div class="container">
+    <div class="row jobs">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="job">
+                <a href="/jobs">&larr; Back to all positions</a>
+                {{ content }}
+            </div>
         </div>
-
     </div>
 </div>
+
+{% if page.benefits %}
+    {% include benefits.html %}
+{% endif %}
