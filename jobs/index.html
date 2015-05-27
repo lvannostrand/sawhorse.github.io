@@ -1,34 +1,52 @@
 ---
-layout: page
+layout: wide-page
 title: Jobs at Sawhorse Media
 ---
+<div class="container">
+    <div class="row jobs">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="jobs-hero">
+                <h2>Work at Sawhorse Media</h2>
+            </div>
 
-<div class="row jobs">
-    <div class="col-md-8 col-md-offset-2">
-        <h2>Work at Sawhorse Media</h2>
+            <p class="featured-paragraph">Sawhorse is a pretty awesome place to work. We have multiple products that
+                reach an audience of millions. We want you to feel ownership and excitement about what you’re building, and as
+                a part of a small startup you’ll have a lot of influence to shape the company and engineering direction overall.</p>
 
-        <p>Sawhorse is a pretty awesome place to work. We have multiple products that reach an audience of millions. We want you to feel ownership and excitement about what you’re building, and as a part of a small
-            startup you’ll have a lot of influence to shape the company and engineering direction overall.</p>
+            <h3>Our products</h3>
 
-        <h3>Our products</h3>
+            <p><strong><a href="http://muckrack.com">Muck Rack</a></strong> connects journalists with PR pros, companies
+                and sources. Journalists use Muck Rack to build portfolios, track the success of their articles and connect
+                with colleagues. Companies use Muck Rack to get more press and receive real time alerts when they're
+                mentioned in
+                the news.</p>
 
-        <p><strong><a href="http://muckrack.com">Muck Rack</a></strong> connects journalists with PR pros, companies and
-            sources. Journalists use Muck Rack to build portfolios, track the success of their articles and connect with
-            colleagues. Companies use Muck Rack to get more press and receive real time alerts when they're mentioned in
-            the news.</p>
+            <p><strong><a href="http://shortyawards.com">The Shorty Awards</a></strong> honor the best of social media
+                each year. Millions of people participate in The Shortys to recognize individuals and organizations producing
+                great content on Twitter, Facebook, Tumblr, YouTube, Foursquare and the rest of the social web.</p>
+        </div>
+    </div>
+</div>
 
-        <p><strong><a href="http://shortyawards.com">The Shorty Awards</a></strong> honor the best of social media each
-            year. Millions of people participate in The Shortys to recognize individuals and organizations producing
-            great content on Twitter, Facebook, Tumblr, YouTube, Foursquare and the rest of the social web.</p>
+<div class="white-section">
+    <div class="container">
+        <div class="row jobs">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Open Positions</h3>
 
+                <div class="row">
+                    {% for page in site.pages %}
+                        {% if page.job == true and page.active == true %}
+                            <div class="col-xs-4">
+                                <a href="{{ page.url }}" class="jobs-list-item jobs-{{ page.type }}">
+                                    <span>{{ page.title }}</span>
 
-        <h3>Open Positions</h3>
-        <ul class="jobs-list">
-            {% for page in site.pages %}
-                {% if page.job == true and page.active == true %}
-                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
+                                </a>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
 </div>

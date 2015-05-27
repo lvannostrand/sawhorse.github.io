@@ -1,25 +1,21 @@
-
 // Sawhorse Variables
 // -----------------------
-$sm-gutter: 	25px
-$sm-violet: 	#31313D
-$sm-orange:		#F48120
-$shorty-teal: 	#2BAFA5
-$mr-blue: 		#048AC2
-$sm-carousel: 	360px
-
+$sm-gutter:     25px
+$sm-carousel:   360px
+$sm-violet:     #31313D
+$sm-orange:     #F48120
+$shorty-teal:   #2BAFA5
+$mr-blue:       #048AC2
 
 // Bootstrap Overrides
 // -----------------------
-$font-family-sans-serif:  "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !default
-$font-family-serif:       "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif !default
-
-$grid-float-breakpoint:     1px
-
+$font-family-sans-serif: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !default
+$font-family-serif: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif !default
+$grid-float-breakpoint: 1px
 
 // Imports
 // -----------------------
-@import "compass"
+// @import "compass"
 @import "bootstrap/bootstrap"
 
 
@@ -28,14 +24,31 @@ $grid-float-breakpoint:     1px
 // General Styles
 // -------------------------------------------
 
+.sa-font-sans-serif
+    font-family: $font-family-sans-serif
+
+
+.sa-font-serif
+    font-family: $font-family-serif
+
+
+// -------------------------------------------
+
+
 body
     background-color: lighten($gray-lighter, 4%)
     color: $gray
+
 p
     -webkit-font-kerning: auto
     text-rendering: optimizeLegibility
+
 h1, h2
     -webkit-font-smoothing: antialiased
+
+a
+    color: lighten($sm-violet, 20%)
+
 section
     padding-top: $sm-gutter
     h2
@@ -45,6 +58,10 @@ section
         margin-bottom: 10px
         padding-bottom: 5px
 
+.white-section
+    background: white
+    margin-top: 40px
+    padding-bottom: 40px
 
 // -------------------------------------------
 // Navigation
@@ -104,8 +121,6 @@ nav
             width: 30%
             display: inline-block
 
-
-
 // -------------------------------------------
 // Landing Page
 // -------------------------------------------
@@ -138,7 +153,7 @@ header
         text-transform: uppercase
         font-size: 1.25em
         margin-top: 80px
-        color: rgba(255,255,255,0.9)
+        color: rgba(255, 255, 255, 0.9)
         @media (max-width: $screen-sm-min)
             margin-top: $sm-gutter
             font-size: 1.65em
@@ -158,6 +173,7 @@ header
         background-repeat: no-repeat
         background-position: center center
         min-height: $sm-carousel
+
 .carousel.fade
     opacity: 1
     .item
@@ -176,6 +192,7 @@ header
             +transition(opacity, .7s)
             opacity: 1
             z-index: 2
+
 .header-bg
     height: $sm-carousel
     overflow: hidden
@@ -201,7 +218,7 @@ header
 .muckrack,
 .shortyawards
     border-bottom: 3px solid $gray-lighter
-    padding: $sm-gutter * 1.5  0px
+    padding: $sm-gutter * 1.5 0px
     h2
         text-transform: uppercase
         font-weight: 700
@@ -222,7 +239,7 @@ header
         width: 100%
         border-radius: 3px
         margin-left: $sm-gutter/2
-        +box-shadow(0px 1px 3px rgba(0,0,0,0.2))
+        +box-shadow(0px 1px 3px rgba(0, 0, 0, 0.2))
         @media (max-width: $screen-sm-min)
             margin-left: 0px
     p
@@ -314,21 +331,99 @@ header
         font-weight: bold
         text-shadow: 0px 1px 1px black
 
-
 .jobs
-    margin-top: 20px
+    margin-top: 30px
+
+    .featured-paragraph
+        font-size: 1.25em
+        line-height: 1.30em
+        color: mix($gray, $gray-light, 85%)
+
+    li
+        font-size: 1.15em
+        padding-bottom: 5px
+
+    p
+        font-size: 1.25em
+        line-height: 1.30em
+        color: $gray
+        a
+            border-bottom: 1px solid lighten($sm-violet, 25%)
+            &:hover
+                text-decoration: none
+                border-bottom: 1px solid lighten($sm-violet, 55%)
+
     h2
-        font-weight: 700
+        font-weight: 800
+        text-align: center
+        margin-top: $sm-gutter * 2
+        margin-bottom: $sm-gutter
+
     h3
+        margin-top: $sm-gutter
         text-transform: uppercase
-        font-size: 1.5em
+        font-weight: 300
+        font-size: 1.4em
+
     h4
         font-weight: 600
+
     .job
         margin-top: 20px
         margin-bottom: 60px
+
 .jobs-list
     margin-bottom: 60px
+
+.jobs-business
+    background-image: url(/assets/images/jobs-business.jpg)
+
+.jobs-development
+    background-image: url(/assets/images/jobs-development.jpg)
+
+.jobs-design
+    background-image: url(/assets/images/jobs-design.jpg)
+
+.jobs-list-item
+    background-size: cover
+    border-radius: 3px
+    text-align: center
+    font-size: 1.25em
+    font-weight: 700
+    line-height: 1.15em
+    width: 100%
+    display: block
+    text-shadow: 0px 0px 2px black
+    color: white
+    margin-top: 15px
+    margin-bottom: 15px
+    height: 100px
+    position: relative
+    &:hover
+        color: $sm-orange
+
+    span
+        position: absolute
+        padding: 10px
+        top: 50%
+        display: block
+        width: 100%
+        transform: translateY(-50%)
+
+.jobs-hero
+    box-shadow: 0px 0px 2px  rgba(0,0,0,0.5)
+    background-image: url(/assets/images/jobs-onaboat-a.jpg)
+    background-position: center -15px
+    background-size: cover
+    margin-bottom: 25px
+    padding: 100px 20px
+    border-radius: 5px
+    color: white
+    &:hover
+        background-image: url(/assets/images/jobs-onaboat-b.jpg)
+
+
+
 
 // -------------------------------------------
 // Footer
@@ -377,8 +472,6 @@ footer
         width: 100px
         height: 50px
 
-
-
 // -------------------------------------------
 // JS
 // -------------------------------------------
@@ -386,23 +479,19 @@ footer
 .mosaicflow__column
     float: left
 
-
-
 // -------------------------------------------
 // Responsive styles
 // -------------------------------------------
 @media (max-width: 400px)
 
-
-
 // Wufoo form styles
 // -----------------------
-.wufoo
+.wufoo, .form-group
     margin-top: 15px
     font-family: $font-family-serif
 
     input, textarea
-        +border-radius(4px)
+        border-radius: 4px
         @extend .form-control
 
     input.text

@@ -1209,7 +1209,7 @@ output {
   line-height: 1.42857;
   color: #555555; }
 
-.form-control, .wufoo input, .wufoo textarea {
+.form-control, .wufoo input, .wufoo textarea, .form-group input, .form-group textarea {
   display: block;
   width: 100%;
   height: 34px;
@@ -1225,26 +1225,26 @@ output {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
-.form-control:focus, .wufoo input:focus, .wufoo textarea:focus {
+.form-control:focus, .wufoo input:focus, .wufoo textarea:focus, .form-group input:focus, .form-group textarea:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
-.form-control:-moz-placeholder, .wufoo input:-moz-placeholder, .wufoo textarea:-moz-placeholder {
+.form-control:-moz-placeholder, .wufoo input:-moz-placeholder, .wufoo textarea:-moz-placeholder, .form-group input:-moz-placeholder, .form-group textarea:-moz-placeholder {
   color: #999999; }
-.form-control::-moz-placeholder, .wufoo input::-moz-placeholder, .wufoo textarea::-moz-placeholder {
+.form-control::-moz-placeholder, .wufoo input::-moz-placeholder, .wufoo textarea::-moz-placeholder, .form-group input::-moz-placeholder, .form-group textarea::-moz-placeholder {
   color: #999999;
   opacity: 1; }
-.form-control:-ms-input-placeholder, .wufoo input:-ms-input-placeholder, .wufoo textarea:-ms-input-placeholder {
+.form-control:-ms-input-placeholder, .wufoo input:-ms-input-placeholder, .wufoo textarea:-ms-input-placeholder, .form-group input:-ms-input-placeholder, .form-group textarea:-ms-input-placeholder {
   color: #999999; }
-.form-control::-webkit-input-placeholder, .wufoo input::-webkit-input-placeholder, .wufoo textarea::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder, .wufoo input::-webkit-input-placeholder, .wufoo textarea::-webkit-input-placeholder, .form-group input::-webkit-input-placeholder, .form-group textarea::-webkit-input-placeholder {
   color: #999999; }
-.form-control[disabled], .wufoo input[disabled], .wufoo textarea[disabled], .form-control[readonly], .wufoo input[readonly], .wufoo textarea[readonly], fieldset[disabled] .form-control, fieldset[disabled] .wufoo input, .wufoo fieldset[disabled] input, fieldset[disabled] .wufoo textarea, .wufoo fieldset[disabled] textarea {
+.form-control[disabled], .wufoo input[disabled], .wufoo textarea[disabled], .form-group input[disabled], .form-group textarea[disabled], .form-control[readonly], .wufoo input[readonly], .wufoo textarea[readonly], .form-group input[readonly], .form-group textarea[readonly], fieldset[disabled] .form-control, fieldset[disabled] .wufoo input, .wufoo fieldset[disabled] input, fieldset[disabled] .wufoo textarea, .wufoo fieldset[disabled] textarea, fieldset[disabled] .form-group input, .form-group fieldset[disabled] input, fieldset[disabled] .form-group textarea, .form-group fieldset[disabled] textarea {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1; }
 
-textarea.form-control, .wufoo textarea {
+textarea.form-control, .wufoo textarea, .form-group textarea {
   height: auto; }
 
 input[type="date"] {
@@ -1286,7 +1286,7 @@ input[type="date"] {
 input[type="radio"][disabled], fieldset[disabled] input[type="radio"], input[type="checkbox"][disabled], fieldset[disabled] input[type="checkbox"], .radio[disabled], fieldset[disabled] .radio, .radio-inline[disabled], fieldset[disabled] .radio-inline, .checkbox[disabled], fieldset[disabled] .checkbox, .checkbox-inline[disabled], fieldset[disabled] .checkbox-inline {
   cursor: not-allowed; }
 
-.input-sm, .input-group-sm > .form-control, .wufoo .input-group-sm > input, .wufoo .input-group-sm > textarea, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn {
+.input-sm, .input-group-sm > .form-control, .wufoo .input-group-sm > input, .wufoo .input-group-sm > textarea, .form-group .input-group-sm > input, .form-group .input-group-sm > textarea, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -1297,10 +1297,10 @@ select.input-sm, .input-group-sm > select.form-control, .input-group-sm > select
   height: 30px;
   line-height: 30px; }
 
-textarea.input-sm, .input-group-sm > textarea.form-control, .wufoo .input-group-sm > textarea, .input-group-sm > textarea.input-group-addon, .input-group-sm > .input-group-btn > textarea.btn {
+textarea.input-sm, .input-group-sm > textarea.form-control, .wufoo .input-group-sm > textarea, .form-group .input-group-sm > textarea, .input-group-sm > textarea.input-group-addon, .input-group-sm > .input-group-btn > textarea.btn {
   height: auto; }
 
-.input-lg, .input-group-lg > .form-control, .wufoo .input-group-lg > input, .wufoo .input-group-lg > textarea, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {
+.input-lg, .input-group-lg > .form-control, .wufoo .input-group-lg > input, .wufoo .input-group-lg > textarea, .form-group .input-group-lg > input, .form-group .input-group-lg > textarea, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
@@ -1311,12 +1311,12 @@ select.input-lg, .input-group-lg > select.form-control, .input-group-lg > select
   height: 46px;
   line-height: 46px; }
 
-textarea.input-lg, .input-group-lg > textarea.form-control, .wufoo .input-group-lg > textarea, .input-group-lg > textarea.input-group-addon, .input-group-lg > .input-group-btn > textarea.btn {
+textarea.input-lg, .input-group-lg > textarea.form-control, .wufoo .input-group-lg > textarea, .form-group .input-group-lg > textarea, .input-group-lg > textarea.input-group-addon, .input-group-lg > .input-group-btn > textarea.btn {
   height: auto; }
 
 .has-feedback {
   position: relative; }
-.has-feedback .form-control, .has-feedback .wufoo input, .wufoo .has-feedback input, .has-feedback .wufoo textarea, .wufoo .has-feedback textarea {
+.has-feedback .form-control, .has-feedback .wufoo input, .wufoo .has-feedback input, .has-feedback .wufoo textarea, .wufoo .has-feedback textarea, .has-feedback .form-group input, .form-group .has-feedback input, .has-feedback .form-group textarea, .form-group .has-feedback textarea {
   padding-right: 42.5px; }
 .has-feedback .form-control-feedback {
   position: absolute;
@@ -1330,11 +1330,11 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .wufoo .input-group-
 
 .has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline {
   color: #3c763d; }
-.has-success .form-control, .has-success .wufoo input, .wufoo .has-success input, .has-success .wufoo textarea, .wufoo .has-success textarea {
+.has-success .form-control, .has-success .wufoo input, .wufoo .has-success input, .has-success .wufoo textarea, .wufoo .has-success textarea, .has-success .form-group input, .form-group .has-success input, .has-success .form-group textarea, .form-group .has-success textarea {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-.has-success .form-control:focus, .has-success .wufoo input:focus, .wufoo .has-success input:focus, .has-success .wufoo textarea:focus, .wufoo .has-success textarea:focus {
+.has-success .form-control:focus, .has-success .wufoo input:focus, .wufoo .has-success input:focus, .has-success .wufoo textarea:focus, .wufoo .has-success textarea:focus, .has-success .form-group input:focus, .form-group .has-success input:focus, .has-success .form-group textarea:focus, .form-group .has-success textarea:focus {
   border-color: #2b542c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
@@ -1347,11 +1347,11 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .wufoo .input-group-
 
 .has-warning .help-block, .has-warning .control-label, .has-warning .radio, .has-warning .checkbox, .has-warning .radio-inline, .has-warning .checkbox-inline {
   color: #8a6d3b; }
-.has-warning .form-control, .has-warning .wufoo input, .wufoo .has-warning input, .has-warning .wufoo textarea, .wufoo .has-warning textarea {
+.has-warning .form-control, .has-warning .wufoo input, .wufoo .has-warning input, .has-warning .wufoo textarea, .wufoo .has-warning textarea, .has-warning .form-group input, .form-group .has-warning input, .has-warning .form-group textarea, .form-group .has-warning textarea {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-.has-warning .form-control:focus, .has-warning .wufoo input:focus, .wufoo .has-warning input:focus, .has-warning .wufoo textarea:focus, .wufoo .has-warning textarea:focus {
+.has-warning .form-control:focus, .has-warning .wufoo input:focus, .wufoo .has-warning input:focus, .has-warning .wufoo textarea:focus, .wufoo .has-warning textarea:focus, .has-warning .form-group input:focus, .form-group .has-warning input:focus, .has-warning .form-group textarea:focus, .form-group .has-warning textarea:focus {
   border-color: #66512c;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
@@ -1364,11 +1364,11 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .wufoo .input-group-
 
 .has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline {
   color: #a94442; }
-.has-error .form-control, .has-error .wufoo input, .wufoo .has-error input, .has-error .wufoo textarea, .wufoo .has-error textarea {
+.has-error .form-control, .has-error .wufoo input, .wufoo .has-error input, .has-error .wufoo textarea, .wufoo .has-error textarea, .has-error .form-group input, .form-group .has-error input, .has-error .form-group textarea, .form-group .has-error textarea {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
-.has-error .form-control:focus, .has-error .wufoo input:focus, .wufoo .has-error input:focus, .has-error .wufoo textarea:focus, .wufoo .has-error textarea:focus {
+.has-error .form-control:focus, .has-error .wufoo input:focus, .wufoo .has-error input:focus, .has-error .wufoo textarea:focus, .wufoo .has-error textarea:focus, .has-error .form-group input:focus, .form-group .has-error input:focus, .has-error .form-group textarea:focus, .form-group .has-error textarea:focus {
   border-color: #843534;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
@@ -1393,7 +1393,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .wufoo .input-group-
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle; }
-  .form-inline .form-control, .navbar-form .form-control, .form-inline .wufoo input, .wufoo .form-inline input, .navbar-form .wufoo input, .wufoo .navbar-form input, .form-inline .wufoo textarea, .wufoo .form-inline textarea, .navbar-form .wufoo textarea, .wufoo .navbar-form textarea {
+  .form-inline .form-control, .navbar-form .form-control, .form-inline .wufoo input, .wufoo .form-inline input, .navbar-form .wufoo input, .wufoo .navbar-form input, .form-inline .wufoo textarea, .wufoo .form-inline textarea, .navbar-form .wufoo textarea, .wufoo .navbar-form textarea, .form-inline .form-group input, .form-group .form-inline input, .navbar-form .form-group input, .form-group .navbar-form input, .form-inline .form-group textarea, .form-group .form-inline textarea, .navbar-form .form-group textarea, .form-group .navbar-form textarea {
     display: inline-block;
     width: auto;
     vertical-align: middle; }
@@ -1810,14 +1810,14 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   float: none;
   padding-left: 0;
   padding-right: 0; }
-.input-group .form-control, .input-group .wufoo input, .wufoo .input-group input, .input-group .wufoo textarea, .wufoo .input-group textarea {
+.input-group .form-control, .input-group .wufoo input, .wufoo .input-group input, .input-group .wufoo textarea, .wufoo .input-group textarea, .input-group .form-group input, .form-group .input-group input, .input-group .form-group textarea, .form-group .input-group textarea {
   float: left;
   width: 100%;
   margin-bottom: 0; }
 
-.input-group-addon, .input-group-btn, .input-group .form-control, .input-group .wufoo input, .wufoo .input-group input, .input-group .wufoo textarea, .wufoo .input-group textarea {
+.input-group-addon, .input-group-btn, .input-group .form-control, .input-group .wufoo input, .wufoo .input-group input, .input-group .wufoo textarea, .wufoo .input-group textarea, .input-group .form-group input, .form-group .input-group input, .input-group .form-group textarea, .form-group .input-group textarea {
   display: table-cell; }
-.input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child), .input-group .wufoo input:not(:first-child):not(:last-child), .wufoo .input-group input:not(:first-child):not(:last-child), .input-group .wufoo textarea:not(:first-child):not(:last-child), .wufoo .input-group textarea:not(:first-child):not(:last-child) {
+.input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child), .input-group .wufoo input:not(:first-child):not(:last-child), .wufoo .input-group input:not(:first-child):not(:last-child), .input-group .wufoo textarea:not(:first-child):not(:last-child), .wufoo .input-group textarea:not(:first-child):not(:last-child), .input-group .form-group input:not(:first-child):not(:last-child), .form-group .input-group input:not(:first-child):not(:last-child), .input-group .form-group textarea:not(:first-child):not(:last-child), .form-group .input-group textarea:not(:first-child):not(:last-child) {
   border-radius: 0; }
 
 .input-group-addon, .input-group-btn {
@@ -1846,14 +1846,14 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .input-group-addon input[type="radio"], .input-group-addon input[type="checkbox"] {
   margin-top: 0; }
 
-.input-group .form-control:first-child, .input-group .wufoo input:first-child, .wufoo .input-group input:first-child, .input-group .wufoo textarea:first-child, .wufoo .input-group textarea:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+.input-group .form-control:first-child, .input-group .wufoo input:first-child, .wufoo .input-group input:first-child, .input-group .wufoo textarea:first-child, .wufoo .input-group textarea:first-child, .input-group .form-group input:first-child, .form-group .input-group input:first-child, .input-group .form-group textarea:first-child, .form-group .input-group textarea:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
 .input-group-addon:first-child {
   border-right: 0; }
 
-.input-group .form-control:last-child, .input-group .wufoo input:last-child, .wufoo .input-group input:last-child, .input-group .wufoo textarea:last-child, .wufoo .input-group textarea:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+.input-group .form-control:last-child, .input-group .wufoo input:last-child, .wufoo .input-group input:last-child, .input-group .wufoo textarea:last-child, .wufoo .input-group textarea:last-child, .input-group .form-group input:last-child, .form-group .input-group input:last-child, .input-group .form-group textarea:last-child, .form-group .input-group textarea:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
@@ -2676,6 +2676,12 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 @media print {
   .hidden-print, tr.hidden-print, th.hidden-print, td.hidden-print {
     display: none !important; } }
+.sa-font-sans-serif {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.sa-font-serif {
+  font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif; }
+
 body {
   background-color: #f9f9f9;
   color: #555555; }
@@ -2687,6 +2693,9 @@ p {
 h1, h2 {
   -webkit-font-smoothing: antialiased; }
 
+a {
+  color: #5e5e76; }
+
 section {
   padding-top: 25px; }
 section h2 {
@@ -2695,6 +2704,11 @@ section h2 {
   text-transform: uppercase;
   margin-bottom: 10px;
   padding-bottom: 5px; }
+
+.white-section {
+  background: white;
+  margin-top: 40px;
+  padding-bottom: 40px; }
 
 nav {
   background-color: white;
@@ -2965,12 +2979,33 @@ header h3 {
   text-shadow: 0px 1px 1px black; }
 
 .jobs {
-  margin-top: 20px; }
+  margin-top: 30px; }
+.jobs .featured-paragraph {
+  font-size: 1.25em;
+  line-height: 1.3em;
+  color: #5f5f5f; }
+.jobs li {
+  font-size: 1.15em;
+  padding-bottom: 5px; }
+.jobs p {
+  font-size: 1.25em;
+  line-height: 1.3em;
+  color: #555555; }
+.jobs p a {
+  border-bottom: 1px solid #6a6a84; }
+.jobs p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #bdbdca; }
 .jobs h2 {
-  font-weight: 700; }
+  font-weight: 800;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px; }
 .jobs h3 {
+  margin-top: 25px;
   text-transform: uppercase;
-  font-size: 1.5em; }
+  font-weight: 300;
+  font-size: 1.4em; }
 .jobs h4 {
   font-weight: 600; }
 .jobs .job {
@@ -2979,6 +3014,52 @@ header h3 {
 
 .jobs-list {
   margin-bottom: 60px; }
+
+.jobs-business {
+  background-image: url(/assets/images/jobs-business.jpg); }
+
+.jobs-development {
+  background-image: url(/assets/images/jobs-development.jpg); }
+
+.jobs-design {
+  background-image: url(/assets/images/jobs-design.jpg); }
+
+.jobs-list-item {
+  background-size: cover;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1.15em;
+  width: 100%;
+  display: block;
+  text-shadow: 0px 0px 2px black;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 100px;
+  position: relative; }
+.jobs-list-item:hover {
+  color: #f48120; }
+.jobs-list-item span {
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  display: block;
+  width: 100%;
+  transform: translateY(-50%); }
+
+.jobs-hero {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  background-image: url(/assets/images/jobs-onaboat-a.jpg);
+  background-position: center -15px;
+  background-size: cover;
+  margin-bottom: 25px;
+  padding: 100px 20px;
+  border-radius: 5px;
+  color: white; }
+.jobs-hero:hover {
+  background-image: url(/assets/images/jobs-onaboat-b.jpg); }
 
 footer {
   margin-top: 50px;
@@ -3026,77 +3107,73 @@ footer small a {
 .mosaicflow__column {
   float: left; }
 
-.wufoo {
+.wufoo, .form-group {
   margin-top: 15px;
   font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif; }
-.wufoo input, .wufoo textarea {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+.wufoo input, .wufoo textarea, .form-group input, .form-group textarea {
   border-radius: 4px; }
-.wufoo input.text {
+.wufoo input.text, .form-group input.text {
   padding: 5px; }
-.wufoo input.submit {
+.wufoo input.submit, .form-group input.submit {
   width: 100%;
   text-transform: uppercase;
   font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif;
   background-color: #e6e6e6;
   border: 0px; }
-.wufoo input.submit:hover {
+.wufoo input.submit:hover, .form-group input.submit:hover {
   background-color: #d9d9d9;
   color: #3c3c4b; }
-.wufoo span.req {
+.wufoo span.req, .form-group span.req {
   color: #f48120;
   margin-left: 4px !important;
   font-size: 18px;
   font-weight: 100;
   -webkit-font-smoothing: antialiased; }
-.wufoo textarea.textarea {
+.wufoo textarea.textarea, .form-group textarea.textarea {
   padding: 9px; }
-.wufoo label {
+.wufoo label, .form-group label {
   color: #767691;
   font-weight: 500;
   font-size: 1em;
   text-transform: uppercase; }
 @media (max-width: 1199px) {
-  .wufoo label {
+  .wufoo label, .form-group label {
     font-size: 0.9em; } }
 @media (max-width: 991px) {
-  .wufoo label {
+  .wufoo label, .form-group label {
     font-size: 1em; } }
-.wufoo li {
+.wufoo li, .form-group li {
   padding: 0px 0px 20px 0px; }
-.wufoo #foli9 span {
+.wufoo #foli9 span, .form-group #foli9 span {
   width: 49%;
   margin: 0; }
-.wufoo #foli9 span:first-of-type {
+.wufoo #foli9 span:first-of-type, .form-group #foli9 span:first-of-type {
   margin-right: 2%; }
-.wufoo #foli9 input {
+.wufoo #foli9 input, .form-group #foli9 input {
   width: 100%; }
-.wufoo #foli7 input {
+.wufoo #foli7 input, .form-group #foli7 input {
   width: 100%; }
-.wufoo #Field5 {
+.wufoo #Field5, .form-group #Field5 {
   width: 100%; }
-.wufoo #foli8 {
+.wufoo #foli8, .form-group #foli8 {
   padding-bottom: 0px; }
-.wufoo #foli8 span {
+.wufoo #foli8 span, .form-group #foli8 span {
   width: 15%;
   margin: 0px; }
-.wufoo #foli8 span input {
+.wufoo #foli8 span input, .form-group #foli8 span input {
   width: 100%; }
-.wufoo #foli8 span.symbol {
+.wufoo #foli8 span.symbol, .form-group #foli8 span.symbol {
   width: 5%;
   text-align: center; }
 @media (min-width: 992px) {
-  .wufoo .no-rp {
+  .wufoo .no-rp, .form-group .no-rp {
     padding-right: 0px; }
-  .wufoo .foli12 {
+  .wufoo .foli12, .form-group .foli12 {
     width: 26.5%;
     padding-right: 5px; }
-  .wufoo .foli5 {
+  .wufoo .foli5, .form-group .foli5 {
     padding-left: 0px;
     padding-right: 0px;
     width: 23.5%; }
-  .wufoo input#Field12 {
+  .wufoo input#Field12, .form-group input#Field12 {
     width: 99%; } }

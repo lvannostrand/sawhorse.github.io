@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Sawhorse Media" />
     <meta name="copyright" content="Copyright 2014, Sawhorse Media" />
-    <title>Software Engineer | Sawhorse Media</title>
+    <title>Sawhorse Media Styleguide | Sawhorse Media</title>
 
     <link rel="shortcut icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="/assets/stylesheets/style.css">
@@ -36,52 +36,96 @@
 </nav>
 
     <div class="container">
-        <div class="row jobs">
-    <div class="col-md-8 col-md-offset-2">
+        <section class="styleguide">
+    <div class="row">
 
-        <div class="job">
-   <a href="/jobs">&larr; Back to all positions</a>
-
-        <h2>Software Engineer - NY</h2>
-
-<p>Build features and infrastructure for <a href="http://muckrack.com">Muck Rack</a>. An ideal candidate understands
-    what makes great (and maintainable) code, as well as a feel for what makes for good user interactions. Experience with
-    software-as-a-service sites or working at a startup is a plus.</p>
-
-<h4>Requirements</h4>
-<ul>
-    <li>Passionate about writing great code and an adherent to the Zen of Python</li>
-    <li>Facility with Javascript and CSS, and the issues in writing clear, maintainable and testable front-end code </li>
-    <li>Can write readable, testable, quality code</li>
-    <li>Experience working in a fast paced development environment with testing, continuous integration and multiple daily deployments.
-    </li>
-    <li>Excellent communication skills and ability to work closely with designers and product managers</li>
-    <li>Flexibility, great problem-solving skills, and <a href="/FUN">sense of humor</a></li>
-</ul>
-
-<h4>Preferred</h4>
-<ul>
-    <li>Familiarity with managing servers especially with tools such as Ansible</li>
-    <li>Interested in journalism, news, media or social media</li>
-    <li>Worked at or founded a startup</li>
-    <li>Skilled at moving Trello cards from the left to the right.</li>
-</ul>
-
-<h3>How to apply</h3>
-
-<p>First, <a href="http://muckrack.com">create your profile on Muck Rack</a>. Second, send us an email at
-    <a href="mailto:jobs@sawhorsemedia.com">jobs@sawhorsemedia.com</a> and:</p>
-
-<ul>
-    <li>Include links that demonstrate your work, such as your Github profile, personal site, or live projects you’ve built or worked on </li>
-    <li>Tell us why you’re interested in working at Sawhorse</li>
-    <li>Attachments should be PDF, not MS Word.</li>
-</ul>
+        <div class="col-xs-12">
+            <p class="lead">This website is built on Jekyll. It uses Bootstrap 3, Font Awesome 3, and Sass.</p>
         </div>
 
-    </div>
-</div>
+        <div class="col-md-6 sm-contact-sidebar">
+            <h2>Sidebar with Links</h2>
 
+            <p>Use the class <code>sm-contact-sidebar</code>, with a standard unordered list.</p>
+
+            <ul>
+                <li>
+                    <a href="http://twitter.com/sawhorse">@Sawhorse</a>
+                    <i class="fa fa-twitter"></i>
+                </li>
+                <li>
+                    <a href="http://twitter.com/muckrack">@MuckRack</a>
+                    <i class="fa fa-twitter"></i>
+                </li>
+                <li>
+                    <a href="http://twitter.com/shortyawards">@ShortyAwards</a>
+                    <i class="fa fa-twitter"></i>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/sawhorsemedia">Like Sawhorse Media</a>
+                    <i class="fa fa-facebook"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h2>Inputs and Forms</h2>
+
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+
+                <textarea class="form-control" rows="2"></textarea>
+            </form>
+        </div>
+        <div class="clearfix"></div>
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="col-md-6">
+            <h2>Typography</h2>
+
+            <h1>h1. Bootstrap heading</h1>
+
+            <h2>h2. Bootstrap heading</h2>
+
+            <h3>h3. Bootstrap heading
+                <small>Secondary text</small>
+            </h3>
+            <h4>h4. Bootstrap heading
+                <small>Secondary text</small>
+            </h4>
+            <h5>h5. Bootstrap heading
+                <small>Secondary text</small>
+            </h5>
+            <h6>h6. Bootstrap heading
+                <small>Secondary text</small>
+            </h6>
+        </div>
+
+        <div class="col-md-6">
+            <p class="lead">
+                Lead text. Sed diam eget risus varius blandit sit amet non magna. Bibendum Ipsum Etiam
+            </p>
+
+            <h3>
+                Proxima Nova
+                <small><code>$font-family-sans-serif</code></small>
+            </h3>
+
+            <h3>
+                FF Tisa Web Pro
+                <small><code>$font-family-serif</code></small>
+            </h3>
+        </div>
+</section>
     </div>
 
     <footer>
