@@ -2932,13 +2932,16 @@ header h3 {
 .team-member p {
   margin: 3px 0px;
   font-family: "ff-tisa-web-pro", Georgia, "Times New Roman", Times, serif; }
-.team-member img {
+.team-member .team-member-avatar {
+  background-color: #999999;
+  background-position: center;
+  background-size: cover;
   width: 80px;
   height: 80px;
+  display: block;
   border-radius: 40px;
   margin-right: 20px;
-  float: left;
-  background: #999999; }
+  float: left; }
 
 .sm-contact-sidebar ul {
   padding: 0;

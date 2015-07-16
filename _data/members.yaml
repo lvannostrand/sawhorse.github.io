@@ -41,7 +41,8 @@
 - name: Teddy Bennett
   twitter: beddytennett
   role: Business Development Associate
-  image: teddy.jpeg
+  image: teddy.jpg
+  image_alt: teddy_alt.jpg
 
 - name: Doreen Naor
   twitter: NDoreen
@@ -60,7 +61,6 @@
 
 - name: Nora Tane
   role: Customer Success Manager
-  image: nora.png
 
 - name: Frankie Greek
   twitter: frankiegreek

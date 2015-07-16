@@ -4,23 +4,30 @@ title: Our Team
 ---
 
 <section>
-	<h2>The Team</h2>
+    <h2>The Team</h2>
 
-	<div class="row">
-		{% for member in site.data.members %}
-			<div class="col-sm-6 col-md-4  team-member">
+    <div class="row">
+        {% for member in site.data.members %}
+            <div class="col-sm-6 col-md-4  team-member {{ member.name|slugify }}">
+                <div class=" team-member-avatar"></div>
 
-					<img src="/assets/team/{{ member.image }}" />
+                <h3>{{ member.name }}</h3>
 
-			      <h3>{{ member.name }}</h3>
-			      <p>{{ member.role }}</p>
+                <p>{{ member.role }}</p>
 
-			    {% if member.twitter %}
-			    <a href="https://twitter.com/{{ member.twitter }}">
-			    	@{{ member.twitter }}
-			    </a>
-			    {% endif %}
-			</div>
-		{% endfor %}
-	</div>
+                {% if member.twitter %}
+                    <a href="https://twitter.com/{{ member.twitter }}">
+                        @{{ member.twitter }}
+                    </a>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
 </section>
+
+<style>
+    {% for member in site.data.members %}
+        .{{ member.name|slugify }} .team-member-avatar { background-image: url('http://localhost:4000/assets/team/{{ member.name|slugify }}.jpg'); }
+        .{{ member.name|slugify }}:hover .team-member-avatar { background-image: url('http://localhost:4000/assets/team/{{ member.name|slugify }}_alt.jpg'); }
+    {% endfor %}
+</style>

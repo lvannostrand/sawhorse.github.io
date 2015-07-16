@@ -14,17 +14,22 @@
                                 ;11111,                                                                                              
                                  i11111.                                                                                             
                                  .11111i                                                                                             
-                                  .,,,,,.                                                                                            
-                                                                                                      
-                                                                                         
-                                                                                         
-                                                                                         
-                                                                                         
+                                  .,,,,,.
+
+
+
+# IMPORTANT!
+
+When editing files, **DO NOT EDIT ANY FILES IN `_/site`**, they will just get overridden.
+
+
+### To add / edit / remove team members
+
+https://github.com/sawhorse/sawhorse.github.io/blob/master/_data/members.yaml
+
+
+### To get up and running locally as a developer:
 
 * `gem install jekyll`
 
 * `jekyll serve --watch`
-
----
-
-To add / edit / remove team members: https://github.com/sawhorse/sawhorse.github.io/blob/master/_data/members.yaml

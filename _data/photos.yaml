@@ -18,13 +18,13 @@
 - image: pieday.jpg
 
 - image: godaddy.jpg
-- image: gregbday.png
-- image: centralperk.png
 
+- image: gregbday.png
+
+- image: centralperk.png
 
 - image: natan2.png
   caption: Natan got a new car!
-
 
 - image: blueberries.jpg
 
@@ -35,10 +35,15 @@
 - image: lucas.png
 
 - image: leepuppet.jpg
+
 - image: shipping.png
+
 - image: boat2.png
+
 - image: adweek.png
+
 - image: muckedup2.png
+
 - image: onaboat.png
 
 - image: shorty-photobooth.png
@@ -63,5 +68,4 @@
 
 - link: https://twitter.com/JeffElder/status/362444704140386304/photo/1
   image: yiying.jpg
-  caption: Fail Whale designer Yiying and Greg showing off Muck Rack's Overworked Octopus mascot 
-
+  caption: Fail Whale designer Yiying and Greg showing off Muck Rack's Overworked Octopus mascot
