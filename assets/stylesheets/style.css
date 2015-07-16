@@ -3002,7 +3002,7 @@ header h3 {
 .jobs h2 {
   font-weight: 800;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 25px; }
 .jobs h3 {
   margin-top: 25px;
@@ -3063,6 +3063,20 @@ header h3 {
   color: white; }
 .jobs-hero:hover {
   background-image: url(/assets/images/jobs-onaboat-b.jpg); }
+
+.jobs-hero-wide {
+  background-image: url(/assets/images/sawhorse-media-team.jpg);
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 400px; }
+@media (max-width: 767px) {
+  .jobs-hero-wide {
+    height: 300px; } }
+@media (min-width: 1200px) {
+  .jobs-hero-wide {
+    height: 500px; } }
 
 footer {
   margin-top: 50px;

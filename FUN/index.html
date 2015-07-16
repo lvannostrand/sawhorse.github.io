@@ -4,13 +4,7 @@ title: We're a fun group
 ---
 
 {% for photo in site.data.photos %}
-<div class="fun-block">
-    <img src="/assets/fun/{{ photo.image }}"  alt="{{ photo.caption }}">
-    <div class="caption">
-    	{{ photo.caption }}
-		{% if photo.link %}
-		   <a href="{{ photo.link }}"><i class="fa fa-external-link"></i></a> 
-		{% endif %}
+    <div class="fun-block">
+        <img src="/assets/fun/{{ photo.image }}" alt="{{ photo.caption }}">
     </div>
-</div>
 {% endfor %}
