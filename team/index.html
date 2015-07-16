@@ -27,7 +27,7 @@ title: Our Team
 
 <style>
     {% for member in site.data.members %}
-        .{{ member.name|slugify }} .team-member-avatar { background-image: url('http://localhost:4000/assets/team/{{ member.name|slugify }}.jpg'); }
-        .{{ member.name|slugify }}:hover .team-member-avatar { background-image: url('http://localhost:4000/assets/team/{{ member.name|slugify }}_alt.jpg'); }
+        .{{ member.name|slugify }} .team-member-avatar { background-image: url('/assets/team/{{ member.name|slugify }}.jpg'); }
+        .{{ member.name|slugify }}:hover .team-member-avatar { background-image: url('/assets/team/{{ member.name|slugify }}_alt.jpg'); }
     {% endfor %}
 </style>
